@@ -1,7 +1,14 @@
 /* 400 700 */
 /* 400 400Italic 600 600Italic 700 700Italic */
 /* in 200/ 400/ 600 */
-html, body, h1, h2, h3, p, a, ul {
+html,
+body,
+h1,
+h2,
+h3,
+p,
+a,
+ul {
   padding: 0;
   margin: 0;
 }
@@ -12,8 +19,33 @@ nav ul {
 
 .wrapper {
   max-width: 1200px;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.button-outline {
+  padding: 10px 15px;
+  background-color: #E5D1F7;
+  color: #122952;
+  border: 3px solid #122952;
+  border-radius: 1px;
+  -webkit-box-shadow: 8px 8px 0px #122952;
+          box-shadow: 8px 8px 0px #122952;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  display: inline-block;
+}
+
+.button-outline:hover,
+.button-outline:focus {
+  background-color: #FF8600;
+}
+
+.button-outline:active {
+  -webkit-transform: translateX(4px) translateY(4px);
+          transform: translateX(4px) translateY(4px);
+  -webkit-box-shadow: 4px 4px 0px #122952;
+          box-shadow: 4px 4px 0px #122952;
 }
 
 html {
@@ -38,7 +70,7 @@ h2, h4 {
   text-transform: uppercase;
 }
 
-p {
+p, label, textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -46,7 +78,7 @@ p {
   line-height: 3rem;
 }
 
-a {
+a, button {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   color: #122952;
@@ -110,30 +142,6 @@ header {
 .logo-container a {
   -ms-flex-item-align: start;
       align-self: flex-start;
-}
-
-.button-outline {
-  padding: 10px 15px;
-  background-color: #E5D1F7;
-  color: #122952;
-  border: 3px solid #122952;
-  border-radius: 1px;
-  -webkit-box-shadow: 8px 8px 0px #122952;
-          box-shadow: 8px 8px 0px #122952;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-.button-outline:hover,
-.button-outline:focus {
-  background-color: #FF8600;
-}
-
-.button-outline:active {
-  -webkit-transform: translateX(4px) translateY(4px);
-          transform: translateX(4px) translateY(4px);
-  -webkit-box-shadow: 4px 4px 0px #122952;
-          box-shadow: 4px 4px 0px #122952;
 }
 
 .floating-icon-box {
@@ -260,4 +268,94 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contact-section {
+  background-color: #B5AEF1;
+  padding: 10% 0;
+}
+
+.contact-icon-box i {
+  color: #122952;
+  font-size: 3rem;
+  margin: 5px;
+  padding: 5px;
+}
+
+.contact-icon-box .fa-linkedin {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.contact-outer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact-left-box {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.contact-right-box {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+.contact-right-box a {
+  margin-left: 10%;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5% 0 5% 10%;
+}
+
+.client-name,
+.client-email,
+.client-message {
+  padding: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-button {
+  margin-left: 10%;
+}
+
+footer {
+  background-color: #FF8600;
+}
+
+.footer-container {
+  padding: 1% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+footer p {
+  color: #FFF;
 }

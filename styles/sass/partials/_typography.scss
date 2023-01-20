@@ -25,7 +25,7 @@ h2, h4 {
         text-transform: uppercase;
     }
 
-p {
+p, label, textarea {
     font-family: $ff-body;
     font-size: $fs-body;
     font-weight: 400;
@@ -33,7 +33,7 @@ p {
     line-height: 3rem;
 }
 
-a {
+a, button {
     font-family: $ff-body;
     font-size: $fs-body;
     color: $navyBlue;

@@ -1,16 +1,11 @@
 @use "./variables" as *;
-
-// Header Styles
+ 
 header {
     background-color: $lightLilac;
     height: 100vh;
     padding-top: 2%;
 		position: relative;
 }
-
-// .background-img-container {
-//     background-image: url("../../../assets/fiona-freemark-cloud-background.jpg");
-// }
 
 .header-nav-container {
     display: flex;
@@ -37,28 +32,6 @@ header {
     a {
         align-self: flex-start;
     }
-}
-
-
-
-.button-outline {
-    padding: 10px 15px;
-    background-color: $lightLilac;
-    color: $navyBlue;
-    border: 3px solid $navyBlue;
-    border-radius: 1px;
-    box-shadow: 8px 8px 0px $navyBlue;
-    transition: 300ms;
-}
-
-.button-outline:hover,
-.button-outline:focus {
-    background-color: $accentOrange;
-}
-
-.button-outline:active {
-    transform: translateX(4px) translateY(4px);
-    box-shadow: 4px 4px 0px $navyBlue;
 }
 
 .floating-icon-box {
