@@ -15,12 +15,17 @@
 .about-me-img-container {
     display: flex;
     flex: 35%;
+
     img {
-            object-fit: cover;
-            object-position: 45%;
-            width: 85%;
-            border-radius: 50% 50% 0 0;
-        }
+        object-fit: cover;
+        object-position: 45%;
+        width: 85%;
+        border-radius: 50% 50% 0 0;
+        height: 350px;
+        width: 320px;
+        padding: 5%;
+        border: 3px solid $darkLilac;
+    }
 }
 
 .about-me-text-container {
@@ -28,7 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    flex-basis: 65%;
+    flex-basis: 60%;
     flex-wrap: wrap;
 }
 
@@ -39,8 +44,10 @@
 .skills-section {
     background-color: $navyBlue;
     padding: 10% 0;
-    h3, p{
-        color:$white;
+
+    h3,
+    p {
+        color: $white;
     }
 }
 
@@ -68,6 +75,108 @@
 // END OF SKILLS SECTION -----------------------------
 // PROJECTS SECTION ----------------------------------
 
+.projects-section {
+    padding: 10% 0;
+}
+
+.proj-heading {
+    color: $accentOrange;
+}
+
+.proj-container {
+    padding: 5% 0;
+
+}
+
+.proj-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.proj-img-container {
+    flex-basis: 48%;
+    min-width: 320px;
+    display: flex;
+}
+
+.proj-box-2 {
+    .proj-img-container {
+        justify-content: flex-end;
+    }
+}
+
+.creative-img,
+.animal-match-img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 300px;
+    width: 400px;
+    padding: 5%;
+    border: 3px solid $lightLilac;
+    // outline: 5px solid $darkLilac;
+    opacity: 100%;
+    transition: 300ms;
+    // border-radius: 50% 2% 2% 2%;
+    box-shadow: 12px 12px 0px $lightLilac;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    // box-shadow: 0px 0px 0 5px $white, 0px 0px 0 5px $lightLilac, 0px 0px 0 5px $white, 0px 0px 0 15px $lightLilac;
+    position: relative;
+}
+
+.creative-img {
+    border-radius: 50% 1% 1% 1%;
+}
+
+.animal-match-img {
+    border-radius: 1% 1% 50% 1%;
+    object-position: 0 15%;
+}
+
+
+
+img:hover,
+img:focus {
+    opacity: 50%;
+    border: 3px solid $accentOrange;
+    box-shadow: 12px 12px 0px $accentOrange;
+}
+
+.proj-text-container {
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: flex-start;
+}
+
+.proj-desc,
+.proj-skills {
+    margin: 3% 0;
+}
+
+.proj-skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+		padding: 2% 0;
+
+    li {
+        color: $accentOrange;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+
+.proj-link:first-of-type {
+    margin-right: 5%;
+}
+
+
+
 
 
 // END OF PROJECTS SECTION ---------------------------
@@ -78,7 +187,7 @@
     padding: 10% 0;
 }
 
-.contact-icon-box i{
+.contact-icon-box i {
     color: $navyBlue;
     font-size: 3rem;
     margin: 5px;
@@ -86,7 +195,7 @@
 }
 
 .contact-icon-box .fa-linkedin {
-    margin-left:0;
+    margin-left: 0;
     padding-left: 0;
 }
 
@@ -102,6 +211,7 @@
 
 .contact-right-box {
     flex-basis: 70%;
+
     a {
         margin-left: 10%;
     }
@@ -142,6 +252,7 @@ footer {
     align-items: center;
     flex-basis: 100%;
 }
+
 footer p {
     color: $white;
 }
