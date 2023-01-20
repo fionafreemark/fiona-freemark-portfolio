@@ -231,22 +231,38 @@
 			</div>
 		</section>
 		<section class="contact-section">
-			<div class="wrapper">
-				<h3 class="contact-header">Contact</h3>
-				<div class="contact-icon-box">
-					<i class="fa-brands fa-linkedin"></i>
-					<i class="fa-brands fa-github"></i>
-					<i class="fa-brands fa-twitter"></i>
-					<i class="fa-solid fa-envelope"></i>
-				</div> <!-- End of .contact-icon-box -->
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus repudiandae deleniti amet
-					minus eos perferendis voluptates nam ea nostrum?</p>
-				<a href="#contact" class="button-outline">Get in Touch</a>
+			<div class="wrapper contact-outer-box">
+				<div class="contact-left-box">
+					<h3 class="contact-header">Contact</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus repudiandae deleniti amet
+						minus eos perferendis voluptates nam ea nostrum?</p>
+					<div class="contact-icon-box">
+						<i class="fa-brands fa-linkedin"></i>
+						<i class="fa-brands fa-github"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-solid fa-envelope"></i>
+					</div> <!-- End of .contact-icon-box -->
+				</div>
+				<div class="contact-right-box">
+					<form class="contact-form" action="#" method="post">
+						<!-- Name Input -->
+						<label for="client-name">Name</label>
+						<input type="text" id="client-name" class="client-name" name="client-name">
+						<!-- Email Input -->
+						<label for="client-email">Email Address</label>
+						<input type="email" id="client-email" class="client-name" name="client-email" required>
+						<!-- Message Input -->
+						<label for="client-message">Message</label>
+						<textarea type="text" id="client-message" class="client-message" name="client-message" rows="8" required >Leave me a message here!
+						</textarea>
+					</form>
+					<button name="message-submission" type="submit" class="button-outline form-button">Get in Touch</button>
+				</div>
 			</div> <!-- End of .wrapper -->
 		</section>
 	</main>
 	<footer>
-		<div class="wrapper">
+		<div class="wrapper footer-container">
 			<p>Built in 2023 by Fiona Freemark</p>
 		</div> <!-- End of .wrapper -->
 	</footer>
