@@ -1,1 +1,50 @@
 @use "./variables" as *;
+
+// Global Typography
+
+html {
+    font-size: $fs-global;
+    color: $black;
+}
+
+h1, h3 {
+    font-family: $ff-headings;
+    font-style: italic;
+    color: $navyBlue;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: $fs-logo-h1;
+}
+
+
+h2, h4 {
+        font-family: $ff-body;
+        font-size: $fs-h2;
+        font-weight: 400;
+        color: $navyBlue;
+        text-transform: uppercase;
+    }
+
+p {
+    font-family: $ff-body;
+    font-size: $fs-body;
+    font-weight: 400;
+    color: $navyBlue;
+    line-height: 3rem;
+}
+
+a {
+    font-family: $ff-body;
+    font-size: $fs-body;
+    color: $navyBlue;
+    text-decoration: none;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+i {
+    color: $lightLilac;
+    font-size: $fs-logo-h1;
+}
