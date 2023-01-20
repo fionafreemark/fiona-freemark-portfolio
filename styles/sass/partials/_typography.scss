@@ -25,7 +25,7 @@ h2, h4 {
         text-transform: uppercase;
     }
 
-p, label, textarea {
+p, label, textarea, li {
     font-family: $ff-body;
     font-size: $fs-body;
     font-weight: 400;
@@ -47,4 +47,8 @@ a, button {
 i {
     color: $lightLilac;
     font-size: $fs-logo-h1;
+}
+
+ul {
+    list-style-type: none;
 }
