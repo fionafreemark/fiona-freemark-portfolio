@@ -1,15 +1,28 @@
 @use "./variables" as *;
- 
+
 header {
-    background-color: $lightLilac;
+    // background: rgb(253, 199, 202);
+    // background: linear-gradient(180deg, rgba(253, 199, 202, 1) 0%, rgba(229, 209, 247, 1) 49%);
+		background: rgb(229, 209, 247);
+		background-image: url(../assets/fiona-freemark-cloud-background-lavender.jpg);
+		// background: linear-gradient(180deg, rgba(229, 209, 247, 1) 0%, rgba(181, 174, 241, 1) 90%);
+			background-size:cover;
+			background-position: center;
     height: 100vh;
     padding-top: 2%;
-		position: relative;
+    position: relative;
+				i {
+						color: $navyBlue;
+						padding: 8px 12px;
+						margin: 5px;
+						font-size: 2rem;
+					}
 }
 
 .header-nav-container {
     display: flex;
     justify-content: flex-end;
+
     ul {
         display: flex;
         justify-content: flex-end;
@@ -26,29 +39,34 @@ header {
     justify-content: center;
     // align-items: center;
     height: calc(100vh - 40px);
+
     h2 {
-        padding: 2% 0;
+        padding-top: 2%;
     }
+
     a {
         align-self: flex-start;
+				margin-top: 2%;
     }
 }
 
-.floating-icon-box {
-position: fixed;
-right: 2%;
-bottom: 5%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: #e5d1f7ea;
-border: 3px solid $navyBlue;
-border-radius: 2px;
-i {
-	color: $navyBlue;
-	padding: 5px;
-	margin: 5px;
-	font-size: 2rem;
+.header-icon-box {
+	padding: 2% 0;
+	i {
+		font-size: $fs-h2;
+	}
+	.fa-linkedin {
+		margin-left: 0;
+		padding-left: 0;
+	}
 }
+
+
+.floating-arrow-box {
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.76);
+    border: 3px solid $navyBlue;
+    border-radius: 50%;
 }
