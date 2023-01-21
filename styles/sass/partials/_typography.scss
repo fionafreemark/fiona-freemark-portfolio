@@ -4,7 +4,7 @@
 
 html {
     font-size: $fs-global;
-    color: $black;
+    color: $navyBlue;
 }
 
 h1, h3 {
@@ -40,12 +40,17 @@ a, button {
     text-decoration: none;
 }
 
+a:hover,
+a:focus {
+    color: $accentOrange;
+}
+
 .nav-link {
     text-transform: uppercase;
     font-weight: 400;
 }
 i {
-    color: $lightLilac;
+    color: $darkLilac;
     font-size: $fs-logo-h1;
 }
 
