@@ -1,23 +1,14 @@
 @use "./variables" as *;
 
 header {
-    // background: rgb(253, 199, 202);
-    // background: linear-gradient(180deg, rgba(253, 199, 202, 1) 0%, rgba(229, 209, 247, 1) 49%);
-    background: rgb(229, 209, 247);
+    // background: rgb(229, 209, 247);
+    background: linear-gradient(180deg, rgba(229, 209, 247, 1) 0%, rgba(181, 174, 241, 1) 90%);
     background-image: url(../assets/fiona-freemark-cloud-background-lavender.jpg);
-    // background: linear-gradient(180deg, rgba(229, 209, 247, 1) 0%, rgba(181, 174, 241, 1) 90%);
     background-size: cover;
     background-position: center;
     height: 100vh;
     padding-top: 2%;
     position: relative;
-
-    // i {
-    //     color: $navyBlue;
-    //     padding: 8px 12px;
-    //     margin: 5px;
-    //     font-size: 2rem;
-    // }
 }
 
 .header-nav-container {
