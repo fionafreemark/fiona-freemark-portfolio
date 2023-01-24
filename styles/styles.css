@@ -33,39 +33,6 @@ img {
   margin: 0 auto;
 }
 
-.button-outline,
-.link-outline {
-  padding: 10px 15px;
-  border-radius: 2px;
-  color: #122952;
-  background-color: #FDCCE9;
-  border: 3px solid #FDCCE9;
-  -webkit-box-shadow: 8px 8px 5px #FF8600;
-          box-shadow: 8px 8px 5px #FF8600;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  display: inline-block;
-}
-
-.button-outline:hover,
-.button-outline:focus,
-.link-outline:hover,
-.link-outline:focus {
-  color: #122952;
-  background-color: #FF8600;
-  border: 3px solid #FF8600;
-  -webkit-box-shadow: 8px 8px 5px #FDCCE9;
-          box-shadow: 8px 8px 5px #FDCCE9;
-}
-
-.button-outline:active,
-.link-outline:active {
-  -webkit-transform: translateX(4px) translateY(4px);
-          transform: translateX(4px) translateY(4px);
-  -webkit-box-shadow: 4px 4px 5px #FF8600;
-          box-shadow: 4px 4px 5px #FF8600;
-}
-
 html {
   font-size: 62.5%;
   color: #122952;
@@ -131,8 +98,42 @@ ul {
   list-style-type: none;
 }
 
+.button-outline,
+.link-outline {
+  padding: 10px 15px;
+  border-radius: 2px;
+  color: #122952;
+  background-color: #FDCCE9;
+  border: 3px solid #FDCCE9;
+  -webkit-box-shadow: 8px 8px 5px #FF8600;
+          box-shadow: 8px 8px 5px #FF8600;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  display: inline-block;
+}
+
+.button-outline:hover,
+.button-outline:focus,
+.link-outline:hover,
+.link-outline:focus {
+  color: #122952;
+  background-color: #FF8600;
+  border: 3px solid #FF8600;
+  -webkit-box-shadow: 8px 8px 5px #FDCCE9;
+          box-shadow: 8px 8px 5px #FDCCE9;
+}
+
+.button-outline:active,
+.link-outline:active {
+  -webkit-transform: translateX(4px) translateY(4px);
+          transform: translateX(4px) translateY(4px);
+  -webkit-box-shadow: 4px 4px 5px #FF8600;
+          box-shadow: 4px 4px 5px #FF8600;
+}
+
 header {
-  background: rgb(229, 209, 247);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(229, 209, 247)), color-stop(90%, rgb(181, 174, 241)));
+  background: linear-gradient(180deg, rgb(229, 209, 247) 0%, rgb(181, 174, 241) 90%);
   background-image: url(../assets/fiona-freemark-cloud-background-lavender.jpg);
   background-size: cover;
   background-position: center;
