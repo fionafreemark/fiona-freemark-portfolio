@@ -33,10 +33,13 @@ input[type="text"] {
   flex-basis: 25%;
 }
 i {
-  color: $lightPink;
   font-size: $fs-h1-media;
 }
 
+// PROJECT SECTION
+.proj-box-1::after {
+  bottom: 0;
+}
 
 
 }
@@ -44,13 +47,117 @@ i {
 // --------------- 1100px ---------------
 // --------------- 800px ----------------
 @media (max-width: 800px) {
+h1 {
+  font-size: $fs-h1-media
+}
+
+// ABOUT ME SECTION -----------
+.about-me-container {
+  flex-direction: column;
+}
+
+.about-me-img-container {
+  flex-basis: 100%;
+  width: 80%;
+}
+
+.about-me-text-container {
+  flex-basis: 100%;
+  padding: 5% 0;
+  text-align: justify;
+}
+.about-me-text {
+  margin: 1% 0;
+}
+
+// SKILLS SECTION
+i {
+  font-size: $fs-h1-small;
+}
+// PROJECTS SECTION
+.proj-box {
+  flex-direction: column;
+}
+
+.proj-text-container {
+  text-align: justify;
+}
+
+.proj-skills {
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    font-weight: 400;
+  }
+}
+
+.proj-link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.proj-link {
+  flex-basis: 48%;
+  text-align: center;
+}
+.proj-box-1::after {
+  bottom: -4%;
+}
+
+// CONTACT SECTION -----------------
+
+.contact-outer-box {
+  flex-direction: column;
+}
+
+.contact-left-box {
+  flex-basis: 100%;
+}
+.contact-body {
+  text-align: justify;
+}
+.contact-icon-box {
+  justify-content: space-evenly;
+  i  {
+    font-size: $fs-h1-small;
+  };
+}
+
+.contact-right-box {
+  width: 100%;
+}
+
+.contact-form {
+  padding: 2% 0;
+  flex-basis: 100%;
+}
+
+.client-name,
+.client-email,
+.client-message {
+  flex-basis: 100%;
+  padding: 2% 2%;
+}
+
+.form-button {
+  text-align: center;
+  align-self: flex-start;
+  width: 100%;
+  margin-top: 2%;
+}
 
 }
 
 
 // --------------- 800px ----------------
 // --------------- 500px ----------------
+@media (max-width: 500px) {
 
+
+
+
+}
 
 
 
