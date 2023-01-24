@@ -33,12 +33,12 @@ textarea {
   padding: 10px 15px;
   border-radius: 2px;
   color: #122952;
-  background-color: #E5D1F7;
-  border: 3px solid #E5D1F7;
-  -webkit-box-shadow: 8px 8px 0px #122952;
-          box-shadow: 8px 8px 0px #122952;
-  -webkit-transition: 50ms;
-  transition: 50ms;
+  background-color: #FDCCE9;
+  border: 3px solid #FDCCE9;
+  -webkit-box-shadow: 8px 8px 5px #FF8600;
+          box-shadow: 8px 8px 5px #FF8600;
+  -webkit-transition: 500ms;
+  transition: 500ms;
   display: inline-block;
 }
 
@@ -49,16 +49,16 @@ textarea {
   color: #122952;
   background-color: #FF8600;
   border: 3px solid #FF8600;
-  -webkit-box-shadow: 8px 8px 0px #122952;
-          box-shadow: 8px 8px 0px #122952;
+  -webkit-box-shadow: 8px 8px 5px #FDCCE9;
+          box-shadow: 8px 8px 5px #FDCCE9;
 }
 
 .button-outline:active,
 .link-outline:active {
   -webkit-transform: translateX(4px) translateY(4px);
           transform: translateX(4px) translateY(4px);
-  -webkit-box-shadow: 4px 4px 0px #122952;
-          box-shadow: 4px 4px 0px #122952;
+  -webkit-box-shadow: 4px 4px 5px #FF8600;
+          box-shadow: 4px 4px 5px #FF8600;
 }
 
 html {
@@ -66,7 +66,8 @@ html {
   color: #122952;
 }
 
-h1, h3 {
+h1,
+h3 {
   font-family: "Cormorant Infant", serif;
   font-style: italic;
   color: #122952;
@@ -75,7 +76,8 @@ h1, h3 {
   font-size: 10rem;
 }
 
-h2, h4 {
+h2,
+h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   font-weight: 400;
@@ -83,7 +85,12 @@ h2, h4 {
   text-transform: uppercase;
 }
 
-p, label, textarea, li {
+p,
+label,
+textarea,
+li,
+input[type=email],
+input[type=text] {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -91,7 +98,8 @@ p, label, textarea, li {
   line-height: 3rem;
 }
 
-a, button {
+a,
+button {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   color: #122952;
@@ -106,10 +114,11 @@ a:focus {
 .nav-link {
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 1.6rem;
 }
 
 i {
-  color: #B5AEF1;
+  color: #FDCCE9;
   font-size: 10rem;
 }
 
@@ -125,12 +134,6 @@ header {
   height: 100vh;
   padding-top: 2%;
   position: relative;
-}
-header i {
-  color: #122952;
-  padding: 8px 12px;
-  margin: 5px;
-  font-size: 2rem;
 }
 
 .header-nav-container {
@@ -154,7 +157,7 @@ header i {
   padding: 10px 15px;
 }
 
-.logo-container {
+.heading-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,33 +170,13 @@ header i {
           justify-content: center;
   height: calc(100vh - 40px);
 }
-.logo-container h2 {
-  padding-top: 2%;
+.heading-container h2 {
+  padding: 2.5% 0 1.5%;
 }
-.logo-container a {
+.heading-container a {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 2%;
-}
-
-.header-icon-box {
-  padding: 2% 0;
-}
-.header-icon-box i {
-  font-size: 3rem;
-}
-.header-icon-box .fa-linkedin {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.floating-arrow-box {
-  position: fixed;
-  right: 2%;
-  bottom: 5%;
-  background-color: rgba(255, 255, 255, 0.76);
-  border: 3px solid #122952;
-  border-radius: 50%;
 }
 
 .about-me-section {
@@ -214,6 +197,7 @@ header i {
   -webkit-box-flex: 35%;
       -ms-flex: 35%;
           flex: 35%;
+  margin-top: 1%;
 }
 .about-me-img-container img {
   -o-object-fit: cover;
@@ -225,13 +209,13 @@ header i {
   height: 350px;
   width: 320px;
   padding: 2%;
-  border: 3px solid #B5AEF1;
-  -webkit-box-shadow: 5px 5px 0px #B5AEF1;
-          box-shadow: 5px 5px 0px #B5AEF1;
+  border: 3px solid #E5D1F7;
+  -webkit-box-shadow: 5px 5px 0px #E5D1F7;
+          box-shadow: 5px 5px 0px #E5D1F7;
 }
 
 .about-me-heading {
-  color: #E5D1F7;
+  color: #FF8600;
 }
 
 .about-me-text-container {
@@ -256,6 +240,11 @@ header i {
 
 .about-me-text {
   padding-bottom: 2%;
+  font-size: 1.8rem;
+}
+
+.about-titles {
+  margin-bottom: 3%;
 }
 
 .skills-section {
@@ -331,29 +320,52 @@ header i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 4% 0;
+  position: relative;
+}
+
+.proj-box-1::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #E5D1F7;
+  position: absolute;
+  bottom: -8%;
 }
 
 .proj-img-container {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.proj-text-container {
+  -ms-flex-preferred-size: 58%;
+      flex-basis: 58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .proj-box-2 {
   padding-top: 5%;
-}
-.proj-box-2 .proj-img-container {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 20px;
+  margin-top: 5%;
 }
 
 .creative-img,
@@ -361,17 +373,16 @@ header i {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  min-width: 350px;
   padding: 2%;
   border: 3px solid #E5D1F7;
   opacity: 100%;
   -webkit-transition: 300ms;
   transition: 300ms;
-  border-radius: 50% 50% 0 0;
+  border-radius: 2px;
   -webkit-box-shadow: 5px 5px 0px #E5D1F7;
           box-shadow: 5px 5px 0px #E5D1F7;
-  /* offset-x | offset-y | blur-radius | spread-radius | color */
   position: relative;
 }
 
@@ -386,53 +397,30 @@ header i {
 }
 
 .animal-match-img {
-  -o-object-position: 0 15%;
-     object-position: 0 15%;
-}
-
-.proj-text-container {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.project-box-2 .proj-text-container {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -o-object-position: 0 10%;
+     object-position: 0 10%;
 }
 
 .proj-desc,
 .proj-skills {
-  margin: 2% 0;
+  margin: 4% 0;
 }
 
 .proj-skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 1% 0;
   margin-bottom: 5%;
 }
 .proj-skills li {
-  color: #B5AEF1;
+  color: #122952;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.8rem;
+  padding-right: 2%;
 }
 
 .proj-link:first-of-type {
@@ -481,19 +469,25 @@ header i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .contact-icon-box i {
-  color: #122952;
+  color: #fffaf7;
   font-size: 3rem;
   margin: 5px;
   padding: 5px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  scale: 1;
+}
+
+.contact-icon-box i:hover,
+.contact-icon-box i:focus {
+  color: #FDCCE9;
+  scale: 0.8;
 }
 
 .contact-icon-box .fa-linkedin {
@@ -516,15 +510,22 @@ header i {
           flex-direction: column;
   padding: 5% 0 5% 10%;
 }
+.contact-form label {
+  margin: 2% 0 1%;
+}
 
 .client-name,
 .client-email,
 .client-message {
   padding: 10px;
+  background-color: #fffaf7;
+  border: #fffaf7;
 }
 
 .form-button {
-  margin-left: 10%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 2%;
 }
 
 footer {
@@ -532,7 +533,7 @@ footer {
 }
 
 .footer-container {
-  padding: 1% 0;
+  padding: 2% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
