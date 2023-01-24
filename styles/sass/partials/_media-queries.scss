@@ -1,1 +1,58 @@
 @use "./variables" as *;
+
+// --------------- 1100px ---------------
+@media (max-width: 1100px) {
+.wrapper {
+  width: 85%;
+}
+
+h3 {
+  font-size: $fs-h1-media;
+}
+
+h2, h4 {
+  font-size: $fs-h2-media;
+}
+// ABOUT ME SECTION
+
+p,
+label,
+textarea,
+li,
+input[type="email"],
+input[type="text"] {
+  line-height: 2.5rem;
+}
+
+// SKILLS SECTION
+
+.skills-icon-container {
+  justify-content: center;
+}
+.icon-box {
+  flex-basis: 25%;
+}
+i {
+  color: $lightPink;
+  font-size: $fs-h1-media;
+}
+
+
+
+}
+
+// --------------- 1100px ---------------
+// --------------- 800px ----------------
+@media (max-width: 800px) {
+
+}
+
+
+// --------------- 800px ----------------
+// --------------- 500px ----------------
+
+
+
+
+
+// --------------- 500px ----------------
