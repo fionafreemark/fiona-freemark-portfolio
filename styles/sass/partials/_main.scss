@@ -21,9 +21,6 @@
 	object-position: 45%;
 	width: 90%;
 	border-radius: 50% 50% 0 0;
-	// height: 350px;
-	// width: 320px;
-	// min-height: 300px;
 	min-width: 280px;
 	padding: 2%;
 	border: 3px solid $lightLilac;
@@ -229,6 +226,9 @@
 
 .contact-body {
 	padding: 3% 0 8% 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 100%;
 }
 
 .contact-icon-box {

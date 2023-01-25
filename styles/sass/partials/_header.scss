@@ -12,12 +12,58 @@ header {
 }
 
 .header-nav-container {
-    display: flex;
+    // display: flex;
+    display: none;
     justify-content: flex-end;
 
     ul {
         display: flex;
         justify-content: flex-end;
+    }
+}
+
+.mobile-nav-container {
+    display:block;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $lightLilac;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: 300ms;
+    .mobile-nav-title {
+        position: relative;
+        margin-bottom: 5%;
+    }
+
+    .mobile-nav-title::after {
+        content: "";
+        width: 100%;
+        background-color: $navyBlue;
+        height: 1px;
+        position: absolute;
+        bottom: -5%;
+    }
+
+    .mobile-nav-h4 {
+        text-align: center;
+        font-size: $fs-h2-xsmall;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        align-self: center;
+    }
+    a {
+        font-size: $fs-h2;
+        line-height: 6rem;
     }
 }
 
