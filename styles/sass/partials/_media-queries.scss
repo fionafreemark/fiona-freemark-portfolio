@@ -71,6 +71,9 @@ h1 {
 }
 
 // SKILLS SECTION
+.icon-box {
+  flex-basis: 20%;
+}
 i {
   font-size: $fs-h1-small;
 }
@@ -79,28 +82,41 @@ i {
   flex-direction: column;
 }
 
+.proj-box-2 {
+  padding-top: 10%;
+}
+
 .proj-text-container {
   text-align: justify;
 }
 
 .proj-skills {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  
 
   li {
     font-weight: 400;
+    font-size: $fs-body;
   }
 }
 
 .proj-link-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .proj-link {
-  flex-basis: 48%;
+  flex-basis: 100%;
   text-align: center;
+  margin-bottom: 8%;
 }
+
+.proj-link:first-of-type {
+  margin-right: 0;
+}
+
 .proj-box-1::after {
   bottom: -4%;
 }
@@ -118,9 +134,10 @@ i {
   text-align: justify;
 }
 .contact-icon-box {
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
   i  {
-    font-size: $fs-h1-small;
+    font-size: $fs-h1-xsmall;
   };
 }
 
@@ -144,7 +161,7 @@ i {
   text-align: center;
   align-self: flex-start;
   width: 100%;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 }
@@ -153,8 +170,60 @@ i {
 // --------------- 800px ----------------
 // --------------- 500px ----------------
 @media (max-width: 500px) {
+h1 {
+  font-size: $fs-h1-xsmall;
+}
+
+h3 {
+  font-size: $fs-h1-small;
+}
+
+h2,
+h4 {
+  font-size: $fs-h2-xsmall;
+}
+
+// ABOUT ME SECTION
+
+.fiona-portrait {
+  min-width: 120px;
+}
+
+.about-me-text {
+  padding: 2% 0;
+}
+
+// SKILLS SECTION
+// SKILLS SECTION
+.icon-box {
+  flex-basis: 30%;
+}
+i {
+  font-size: $fs-h1-small;
+}
+
+// PROJECT SECTION
 
 
+
+// CONTACT SECTION
+.contact-section {
+  padding-bottom: 15%;
+}
+
+.contact-icon-box i{
+  font-size: $fs-h2;
+}
+
+.contact-icon-box .fa-linkedin {
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+.contact-icon-box .fa-calendar {
+  margin-right: 5px;
+  padding-right: 5px;
+}
 
 
 }

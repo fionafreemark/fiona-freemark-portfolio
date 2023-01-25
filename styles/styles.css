@@ -147,9 +147,7 @@ header {
 }
 
 .header-nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -161,6 +159,65 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.mobile-nav-container {
+  display: block;
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #E5D1F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.mobile-nav-container .mobile-nav-title {
+  position: relative;
+  margin-bottom: 5%;
+}
+.mobile-nav-container .mobile-nav-title::after {
+  content: "";
+  width: 100%;
+  background-color: #122952;
+  height: 1px;
+  position: absolute;
+  bottom: -5%;
+}
+.mobile-nav-container .mobile-nav-h4 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+.mobile-nav-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mobile-nav-container li {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.mobile-nav-container a {
+  font-size: 3rem;
+  line-height: 6rem;
 }
 
 .nav-link {
@@ -470,6 +527,13 @@ header {
 
 .contact-body {
   padding: 3% 0 8% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .contact-icon-box {
@@ -620,6 +684,10 @@ input[type=text] {
   .about-me-text {
     margin: 1% 0;
   }
+  .icon-box {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
   i {
     font-size: 6rem;
   }
@@ -629,6 +697,9 @@ input[type=text] {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .proj-box-2 {
+    padding-top: 10%;
+  }
   .proj-text-container {
     text-align: justify;
   }
@@ -636,25 +707,34 @@ input[type=text] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .proj-skills li {
     font-weight: 400;
+    font-size: 1.6rem;
   }
   .proj-link-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .proj-link {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     text-align: center;
+    margin-bottom: 8%;
+  }
+  .proj-link:first-of-type {
+    margin-right: 0;
   }
   .proj-box-1::after {
     bottom: -4%;
@@ -673,12 +753,14 @@ input[type=text] {
     text-align: justify;
   }
   .contact-icon-box {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .contact-icon-box i {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .contact-right-box {
     width: 100%;
@@ -700,6 +782,45 @@ input[type=text] {
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: 100%;
-    margin-top: 2%;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 6rem;
+  }
+  h2,
+h4 {
+    font-size: 1.7rem;
+  }
+  .fiona-portrait {
+    min-width: 120px;
+  }
+  .about-me-text {
+    padding: 2% 0;
+  }
+  .icon-box {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  i {
+    font-size: 6rem;
+  }
+  .contact-section {
+    padding-bottom: 15%;
+  }
+  .contact-icon-box i {
+    font-size: 3rem;
+  }
+  .contact-icon-box .fa-linkedin {
+    margin-left: 5px;
+    padding-left: 5px;
+  }
+  .contact-icon-box .fa-calendar {
+    margin-right: 5px;
+    padding-right: 5px;
   }
 }
