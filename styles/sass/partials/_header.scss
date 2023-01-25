@@ -12,8 +12,7 @@ header {
 }
 
 .header-nav-container {
-    // display: flex;
-    display: none;
+    display: flex;
     justify-content: flex-end;
 
     ul {
@@ -23,47 +22,84 @@ header {
 }
 
 .mobile-nav-container {
-    display:block;
-    position: absolute;
-    top: -100vh;
+    position: fixed;
+    top: -100%;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: $lightLilac;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     z-index: 10;
     transition: 300ms;
-    .mobile-nav-title {
-        position: relative;
-        margin-bottom: 5%;
-    }
-
-    .mobile-nav-title::after {
-        content: "";
-        width: 100%;
-        background-color: $navyBlue;
-        height: 1px;
-        position: absolute;
-        bottom: -5%;
-    }
-
-    .mobile-nav-h4 {
-        text-align: center;
-        font-size: $fs-h2-xsmall;
-    }
     ul {
+        height: 100vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     li {
-        align-self: center;
+        padding: 2% 0;
     }
+
     a {
         font-size: $fs-h2;
         line-height: 6rem;
+    }
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 6px;
+    background-color: $navyBlue;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.line-2 {
+    top: 14px;
+}
+
+.line-3 {
+    top: 22px;
+}
+
+.menu-button.active {
+    .line-1 {
+        rotate: 45deg;
+        top: 14px;
+    }
+
+    .line-2 {
+        rotate: -45deg;
+    }
+
+    .line-3 {
+        opacity: 0;
+    }
+}
+
+
+/* Mobile Menu Button */
+.menu-button,
+#toggle {
+    display: none;
+    color: $black;
+    position: fixed;
+    width: 32px;
+    height: 30px;
+    top: 30px;
+    right: 30px;
+    transition: 500ms;
+    z-index: 20;
+
+    &:hover,
+    &:focus {
+        opacity: 0.5;
     }
 }
 
@@ -87,26 +123,3 @@ header {
         margin-top: 2%;
     }
 }
-
-// .header-icon-box {
-//     padding: 2% 0;
-
-//     i {
-//         font-size: $fs-h2;
-//     }
-
-//     .fa-linkedin {
-//         margin-left: 0;
-//         padding-left: 0;
-//     }
-// }
-
-
-// .floating-arrow-box {
-//     position: fixed;
-//     right: 2%;
-//     bottom: 5%;
-//     background-color: rgba(255, 255, 255, 0.76);
-//     border: 3px solid $navyBlue;
-//     border-radius: 50%;
-// }
