@@ -76,7 +76,7 @@ ul {
     color: $navyBlue;
     background-color: $lightPink;
     border: 3px solid $lightPink;
-    box-shadow: 8px 8px 5px $accentOrange;
+    box-shadow: 8px 8px 5px $navyBlue;
     transition: 500ms;
     display: inline-block;
 }
@@ -88,13 +88,13 @@ ul {
     color: $navyBlue;
     background-color: $accentOrange;
     border: 3px solid $accentOrange;
-    box-shadow: 8px 8px 5px $lightPink;
+    box-shadow: 8px 8px 5px $navyBlue;
 }
 
 .button-outline:active,
 .link-outline:active {
     transform: translateX(4px) translateY(4px);
-    box-shadow: 4px 4px 5px $accentOrange;
+    box-shadow: 4px 4px 5px $navyBlue;
 }
 
 // End of Outlined Button Styles ---------------
