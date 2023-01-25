@@ -85,6 +85,7 @@
     flex-basis: 100%;
     padding: 5% 0;
     text-align: justify;
+    margin-left: 0;
   }
 
   .about-me-text {
@@ -113,15 +114,7 @@
     text-align: justify;
   }
 
-  .proj-skills {
-    display: flex;
-    justify-content: space-evenly;
 
-
-    li {
-      font-size: $fs-body;
-    }
-  }
 
 
   .proj-box-1::after {
@@ -216,6 +209,14 @@
 
   // PROJECT SECTION
 
+    .proj-skills {
+      display: flex;
+      justify-content: space-between;
+  
+      li {
+        font-size: $fs-body;
+      }
+    }
     .proj-link-container {
         display: flex;
         flex-direction: column;

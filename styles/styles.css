@@ -171,8 +171,8 @@ header {
   height: 100vh;
   background-color: #E5D1F7;
   z-index: 10;
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 .mobile-nav-container ul {
   height: 100vh;
@@ -235,20 +235,31 @@ header {
 .menu-button,
 #toggle {
   display: none;
-  color: #000;
+  color: #122952;
   position: fixed;
   width: 32px;
   height: 30px;
   top: 30px;
   right: 30px;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   z-index: 20;
 }
 .menu-button:hover, .menu-button:focus,
 #toggle:hover,
 #toggle:focus {
   opacity: 0.5;
+  scale: 0.9;
+}
+
+.scroll {
+  opacity: 1;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.scrolled {
+  background-color: #FF8600;
 }
 
 .nav-link {
@@ -629,6 +640,7 @@ header {
   padding: 2%;
   background-color: #fffaf7;
   border: #fffaf7;
+  border-radius: 2px;
 }
 
 .form-button {
@@ -728,6 +740,7 @@ input[type=text] {
         flex-basis: 100%;
     padding: 5% 0;
     text-align: justify;
+    margin-left: 0;
   }
   .about-me-text {
     margin: 1% 0;
@@ -750,17 +763,6 @@ input[type=text] {
   }
   .proj-text-container {
     text-align: justify;
-  }
-  .proj-skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .proj-skills li {
-    font-size: 1.6rem;
   }
   .proj-box-1::after {
     bottom: -4%;
@@ -834,6 +836,17 @@ h4 {
   }
   i {
     font-size: 6rem;
+  }
+  .proj-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .proj-skills li {
+    font-size: 1.6rem;
   }
   .proj-link-container {
     display: -webkit-box;

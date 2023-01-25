@@ -29,7 +29,7 @@ header {
     height: 100vh;
     background-color: $lightLilac;
     z-index: 10;
-    transition: 300ms;
+    transition: 500ms;
     ul {
         height: 100vh;
         display: flex;
@@ -88,20 +88,31 @@ header {
 .menu-button,
 #toggle {
     display: none;
-    color: $black;
+    color: $navyBlue;
     position: fixed;
     width: 32px;
     height: 30px;
     top: 30px;
     right: 30px;
-    transition: 500ms;
+    transition: 300ms;
     z-index: 20;
 
     &:hover,
     &:focus {
         opacity: 0.5;
+        scale: 0.9;
     }
 }
+
+.scroll {
+    opacity: 1;
+    transition: 300ms;
+}
+
+.scrolled {
+    background-color: $accentOrange;
+}
+
 
 .nav-link {
     padding: 10px 15px;
