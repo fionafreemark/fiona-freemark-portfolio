@@ -146,7 +146,7 @@ header {
   position: relative;
 }
 
-.header-nav-container {
+.nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,7 +154,7 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.header-nav-container ul {
+.nav-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,51 +163,30 @@ header {
           justify-content: flex-end;
 }
 
-.mobile-nav-container {
+.menu-button {
+  display: none;
   position: fixed;
-  top: -100%;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #E5D1F7;
-  z-index: 10;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  width: 32px;
+  height: 30px;
+  top: 30px;
+  right: 30px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  z-index: 20;
 }
-.mobile-nav-container ul {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.mobile-nav-container li {
-  padding: 2% 0;
-}
-.mobile-nav-container a {
-  font-size: 3rem;
-  line-height: 6rem;
+.menu-button:hover, .menu-button:focus {
+  opacity: 0.5;
+  scale: 0.9;
 }
 
-.line-1,
-.line-2,
-.line-3 {
+.menu-open {
   content: " ";
   position: absolute;
   width: 30px;
   height: 3px;
   top: 6px;
   background-color: #122952;
-  border-radius: 10px;
+  border-radius: 2px;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -220,46 +199,15 @@ header {
   top: 22px;
 }
 
-.menu-button.active .line-1 {
+.menu-close .line-1 {
   rotate: 45deg;
   top: 14px;
 }
-.menu-button.active .line-2 {
+.menu-close .line-2 {
   rotate: -45deg;
 }
-.menu-button.active .line-3 {
+.menu-close .line-3 {
   opacity: 0;
-}
-
-/* Mobile Menu Button */
-.menu-button,
-#toggle {
-  display: none;
-  color: #122952;
-  position: fixed;
-  width: 32px;
-  height: 30px;
-  top: 30px;
-  right: 30px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  z-index: 20;
-}
-.menu-button:hover, .menu-button:focus,
-#toggle:hover,
-#toggle:focus {
-  opacity: 0.5;
-  scale: 0.9;
-}
-
-.scroll {
-  opacity: 1;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-.scrolled {
-  background-color: #FF8600;
 }
 
 .nav-link {
@@ -712,17 +660,53 @@ input[type=text] {
     font-size: 8rem;
   }
   /* Menus hidden so they can be revealed by toggle */
-  .header-nav-container {
-    display: none;
-  }
   .menu-button {
     display: block;
     cursor: pointer;
   }
-  /* Toggle For Hidden Menu */
-  #toggle:checked + .mobile-nav-container {
-    display: block;
+  .nav-container.show-nav {
     top: 0;
+  }
+  .nav-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: -120%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(229, 209, 247)), color-stop(90%, rgb(181, 174, 241)));
+    background: linear-gradient(180deg, rgb(229, 209, 247) 0%, rgb(181, 174, 241) 90%);
+    z-index: 10;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .nav-container ul {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-container li {
+    padding: 2% 0;
+  }
+  .nav-container a {
+    font-size: 3rem;
+    line-height: 6rem;
   }
   .about-me-container {
     -webkit-box-orient: vertical;
@@ -815,7 +799,7 @@ input[type=text] {
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   h3 {
     font-size: 6rem;
