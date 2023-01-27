@@ -44,9 +44,9 @@ html {
 	padding: 10px 15px;
 	color: $navyBlue;
 	background-color: $lightLilac;
-	border: 3px solid $navyBlue;
+	border: 3px solid $lightLilac;
 	border-radius: 2px;
-	box-shadow: 8px 8px 0px $navyBlue;
+	box-shadow: 8px 8px 10px $navyBlue;
 	transition: 500ms;
 }
 
@@ -56,14 +56,14 @@ html {
 .link-outline:focus {
 	color: $navyBlue;
 	background-color: $accentOrange;
-	border: 3px solid $navyBlue;
-	box-shadow: 8px 8px 0px $navyBlue;
+	border: 3px solid $accentOrange;
+	box-shadow: 8px 8px 10px $navyBlue;
 }
 
 .button-outline:active,
 .link-outline:active {
 	transform: translateX(4px) translateY(4px);
-	box-shadow: 4px 4px 0px $navyBlue;
+	box-shadow: 4px 4px 10px $navyBlue;
 }
 
 // End of Outlined Button Styles ---------------
