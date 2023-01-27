@@ -1,24 +1,13 @@
 @use "./variables" as *;
 
 header {
-    // background: rgb(229, 209, 247);
     background: linear-gradient(180deg, rgba(229, 209, 247, 1) 0%, rgba(181, 174, 241, 1) 90%);
     background-image: url(../assets/fiona-freemark-cloud-background-lavender.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-    padding-top: 2%;
+
     position: relative;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: flex-end;
-
-    ul {
-        display: flex;
-        justify-content: flex-end;
-    }
 }
 
 // Mobile Menu Button
@@ -40,7 +29,7 @@ header {
 }
 
 // Hamburger menu default styles:
-.menu-open{
+.menu-open {
     content: " ";
     position: absolute;
     width: 30px;
@@ -61,7 +50,7 @@ header {
 }
 
 // Hamburger styled as an "X":
-.menu-close{
+.menu-close {
     .line-1 {
         rotate: 45deg;
         top: 14px;
@@ -76,11 +65,23 @@ header {
     }
 }
 
+// Navigation Styles
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+}
 
 .nav-link {
     padding: 10px 15px;
 }
 
+// Heading Container Styles
 .heading-container {
     display: flex;
     flex-direction: column;

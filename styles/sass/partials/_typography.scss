@@ -10,7 +10,7 @@ html {
 h1,
 h3 {
     font-family: $ff-headings;
-    font-style: italic;
+    // font-style: italic;
     color: $navyBlue;
     text-transform: lowercase;
     font-weight: 700;
@@ -68,33 +68,3 @@ ul {
     list-style-type: none;
 }
 
-// Outlined Button Styles -------------------
-.button-outline,
-.link-outline {
-    padding: 10px 15px;
-    border-radius: 2px;
-    color: $navyBlue;
-    background-color: $lightPink;
-    border: 3px solid $lightPink;
-    box-shadow: 8px 8px 5px $navyBlue;
-    transition: 500ms;
-    display: inline-block;
-}
-
-.button-outline:hover,
-.button-outline:focus,
-.link-outline:hover,
-.link-outline:focus {
-    color: $navyBlue;
-    background-color: $accentOrange;
-    border: 3px solid $accentOrange;
-    box-shadow: 8px 8px 5px $navyBlue;
-}
-
-.button-outline:active,
-.link-outline:active {
-    transform: translateX(4px) translateY(4px);
-    box-shadow: 4px 4px 5px $navyBlue;
-}
-
-// End of Outlined Button Styles ---------------

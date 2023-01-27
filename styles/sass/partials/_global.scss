@@ -36,3 +36,34 @@ img {
 html {
 	scroll-behavior: smooth;
 }
+
+// Outlined Button Styles -------------------
+.button-outline,
+.link-outline {
+	display: inline-block;
+	padding: 10px 15px;
+	color: $navyBlue;
+	background-color: $lightLilac;
+	border: 3px solid $navyBlue;
+	border-radius: 2px;
+	box-shadow: 8px 8px 0px $navyBlue;
+	transition: 500ms;
+}
+
+.button-outline:hover,
+.button-outline:focus,
+.link-outline:hover,
+.link-outline:focus {
+	color: $navyBlue;
+	background-color: $accentOrange;
+	border: 3px solid $navyBlue;
+	box-shadow: 8px 8px 0px $navyBlue;
+}
+
+.button-outline:active,
+.link-outline:active {
+	transform: translateX(4px) translateY(4px);
+	box-shadow: 4px 4px 0px $navyBlue;
+}
+
+// End of Outlined Button Styles ---------------
