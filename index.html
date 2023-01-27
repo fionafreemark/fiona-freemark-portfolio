@@ -18,37 +18,18 @@
 
 <body>
 	<!-- HEADER SECTION----------------------------- -->
-	<header id="top">
+	<header id="home">
 		<div class="background-img-container">
 			<div class="wrapper">
-				<nav class="header-nav-container">
-					<ul>
-						<li>
-							<a href="#home" class="nav-link">Home</a>
-						</li>
-						<li>
-							<a href="#about" class="nav-link">About</a>
-						</li>
-						<li>
-							<a href="#skills" class="nav-link">Skills</a>
-						</li>
-						<li>
-							<a href="#projects" class="nav-link">Projects</a>
-						</li>
-						<li>
-							<a href="#contact" class="nav-link">Contact</a>
-						</li>
-					</ul>
-				</nav>
 				<!-- Menu Icon Starts -->
-				<label class="menu-button" for="toggle">
-					<span class="line-1 scroll"></span>
-					<span class="line-2 scroll"></span>
-					<span class="line-3 scroll"></span>
-				</label>
-				<input type="checkbox" id="toggle" name="toggle" />
+					<div class="menu-button">
+						<span class="line-1 menu-open"></span>
+						<span class="line-2 menu-open"></span>
+						<span class="line-3 menu-open"></span>
+					</div>
 				<!-- Menu Icon Ends -->
-				<nav class="mobile-nav-container">
+				<!-- Navigation Menu Starts -->
+				<nav class="nav-container">
 					<ul class="mobile-nav-menu">
 						<li>
 							<a href="#home" class="nav-link">Home</a>
@@ -67,19 +48,21 @@
 						</li>
 					</ul>
 				</nav>
+				<!-- Navigation Menu Ends -->
+				<!-- Heading Container Starts -->
 				<div class="heading-container">
 					<h1>Fiona Freemark</h1>
 					<h2>Front-End Web Developer</h2>
 					<a href="#contact" class="link-outline">Get in Touch</a>
-				</div>
-			</div>
-		</div>
-		<!-- <div class="floating-arrow-box">
-			<a href="#top"><i class="fa-solid fa-up-long"></i></a>
-		</div> End of .floating-icon-box -->
+				</div> <!-- .heading-container -->
+				<!-- Heading Container Ends -->
+			</div> <!-- .wrapper -->
+		</div> <!-- .background-img-container -->
 	</header>
+	<!-- END OF HEADER SECTION ---------------------------->
+	<!-- MAIN BEGINS -------------------------------------->
 	<main>
-		<!-- ABOUT ME SECTION----------------------------- -->
+		<!-- ABOUT ME SECTION------------------------------->
 		<section class="about-me-section" id="about">
 			<!-- <div class="wrapper"> -->
 			<div class="about-me-container wrapper">
@@ -104,7 +87,8 @@
 			</div>
 			<!-- </div> -->
 		</section>
-		<!-- Skills SECTION----------------------------- -->
+		<!-- END OF ABOUT SECTION ---------------------------->
+		<!-- SKILLS SECTION ---------------------------------->
 		<section class="skills-section watch" id="skills">
 			<div class="wrapper skills-container">
 				<h3 class="skills-heading">Skills</h3>
@@ -137,14 +121,15 @@
 						<i class="devicon-firebase-plain"></i>
 						<p>Firebase</p>
 					</div>
-				</div>
-			</div>
+				</div><!-- End of .skills-icon-container -->
+			</div><!-- End of .wrapper .skills-container -->
 		</section>
 		<!-- PROJECT SECTION----------------------------- -->
 		<section class="projects-section" id="projects">
 			<div class="wrapper proj-outer-box">
 				<h3 class="proj-heading">Projects</h3>
 				<div class="proj-container">
+					<!-- Start of Project Box 1 -->
 					<div class="proj-box proj-box-1">
 						<div class="proj-img-container img-box-1">
 							<a href="https://creative-brand-design.netlify.app/" class="img-link" target="_blank">
@@ -171,6 +156,8 @@
 							</div> <!-- End of .proj-link-container -->
 						</div><!-- End of .proj-text-container -->
 					</div> <!-- End of .proj-box -->
+					<!-- End of Project Box 1 -->
+					<!-- Start of Project Box 2 -->
 					<div class="proj-box proj-box-2">
 						<div class="proj-img-container">
 							<a href="https://animal-match-app.netlify.app/" class="img-link" target="_blank">
@@ -196,13 +183,13 @@
 								<a class="proj-link link-outline" href="https://github.com/renata-fiona/animal-match-app" target="_blank">GitHub</a>
 							</div> <!-- End of .proj-link-container -->
 						</div><!-- End of .proj-text-container -->
-
 					</div> <!-- End of .proj-box -->
-					<!--  -->
-				</div>
-			</div>
+					<!-- End of Project Box 2 -->
+				</div><!-- End of .proj-container -->
+			</div><!-- End of .wrapper .proj-outer-box -->
 		</section>
-		<!-- CONTACT SECTION----------------------------- -->
+		<!-- END OF PROJECT SECTION-------------------------------->
+		<!-- CONTACT SECTION--------------------------------------->
 		<section class="contact-section" id="contact">
 			<div class="wrapper contact-outer-box">
 				<div class="contact-left-box">
@@ -215,8 +202,9 @@
 						<a href="mailto:freemark.dev@gmail.com" target="_blank" title="email me!"><i class="fa-solid fa-envelope"></i></a>
 						<a href="https://calendly.com/fionafreemark/15-minute-chat" target="_blank" title="book a chat"><i class="fa-solid fa-calendar"></i></a>
 					</div> <!-- End of .contact-icon-box -->
-				</div>
+				</div><!-- End of .contact-left-box -->
 				<div class="contact-right-box">
+					<!-- Form Begins ------------------------------------------>
 					<form class="contact-form" method="post" data-netlify="true" name="contact-form">
 						<!-- Name Input -->
 						<label for="client-name">Name</label>
@@ -230,17 +218,21 @@
 						</textarea>
 						<button name="message-submission" type="submit" class="button-outline form-button">Get in Touch</button>
 					</form>
-				</div>
+					<!-- Form Ends -------------------------------------------->
+				</div><!-- End of .contact-right-box -->
 			</div> <!-- End of .wrapper -->
 		</section>
+		<!-- END OF CONTACT SECTION----------------------------->
 	</main>
-	<!-- FOOTER SECTION----------------------------- -->
+	<!-- END OF MAIN ----------------------------------------->
+	<!-- FOOTER SECTION--------------------------------------->
 	<footer>
 		<div class="wrapper footer-container">
 			<p>Built in 2023 by Fiona Freemark</p>
 		</div> <!-- End of .wrapper -->
 	</footer>
+	<!-- END OF FOOTER --------------------------------------->
 	<script src="./script.js"></script>
 </body>
-
+<!-- END OF BODY -------------------------------------------->
 </html>

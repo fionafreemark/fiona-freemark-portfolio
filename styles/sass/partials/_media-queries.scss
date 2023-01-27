@@ -56,20 +56,49 @@
   }
 
   /* Menus hidden so they can be revealed by toggle */
-.header-nav-container {
-  display:none;
-}
+  // .header-nav-container {
+  //   display: none;
+  // }
 
   .menu-button {
     display: block;
     cursor: pointer;
   }
 
-  /* Toggle For Hidden Menu */
-  #toggle:checked+.mobile-nav-container {
-    display: block;
+  .nav-container.show-nav {
     top: 0;
   }
+
+  .nav-container {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: -120%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(229, 209, 247, 1) 0%, rgba(181, 174, 241, 1) 90%);
+    z-index: 10;
+    transition: 500ms;
+
+    ul {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      padding: 2% 0;
+    }
+
+    a {
+      font-size: $fs-h2;
+      line-height: 6rem;
+    }
+  }
+
 
   // ABOUT ME SECTION -----------
   .about-me-container {
@@ -175,7 +204,7 @@
 // --------------- 500px ----------------
 @media (max-width: 500px) {
   h1 {
-    font-size: $fs-h1-xsmall;
+    font-size: $fs-h1-small;
   }
 
   h3 {
@@ -209,29 +238,30 @@
 
   // PROJECT SECTION
 
-    .proj-skills {
-      display: flex;
-      justify-content: space-between;
-  
-      li {
-        font-size: $fs-body;
-      }
+  .proj-skills {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      font-size: $fs-body;
     }
-    .proj-link-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-  
-      .proj-link {
-        flex-basis: 100%;
-        text-align: center;
-        margin-bottom: 8%;
-      }
-  
-      .proj-link:first-of-type {
-        margin-right: 0;
-      }
+  }
+
+  .proj-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .proj-link {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 8%;
+  }
+
+  .proj-link:first-of-type {
+    margin-right: 0;
+  }
 
 
   // CONTACT SECTION
