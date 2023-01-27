@@ -10,7 +10,6 @@ html {
 h1,
 h3 {
     font-family: $ff-headings;
-    // font-style: italic;
     color: $navyBlue;
     text-transform: lowercase;
     font-weight: 700;
@@ -34,10 +33,15 @@ li,
 input[type="email"],
 input[type="text"] {
     font-family: $ff-body;
-    font-size: $fs-body;
+    font-size: 1.8rem;
     font-weight: 400;
     color: $navyBlue;
     line-height: 3rem;
+}
+
+label,
+button {
+    font-weight: 400;
 }
 
 a,

@@ -7,10 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&family=Montserrat:wght@200;400;600&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&family=Montserrat:wght@400;500;600&display=swap"
 		rel="stylesheet">
 	<script src="https://kit.fontawesome.com/88337ba8f3.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -23,15 +21,17 @@
 	<header id="home">
 		<div class="background-img-container">
 			<div class="wrapper">
-				<!-- Menu Icon Starts -->
-				<div class="menu-button">
-					<span class="line-1 menu-open"></span>
-					<span class="line-2 menu-open"></span>
-					<span class="line-3 menu-open"></span>
-				</div>
-				<!-- Menu Icon Ends -->
+				
+				
 				<!-- Navigation Menu Starts -->
 				<nav class="nav-container">
+					<!-- Menu Icon Starts -->
+					<button class="menu-button" aria-label="menu">
+						<span class="line-1 menu-open"></span>
+						<span class="line-2 menu-open"></span>
+						<span class="line-3 menu-open"></span>
+					</button>
+					<!-- Menu Icon Ends -->
 					<ul class="nav-menu">
 						<li>
 							<a href="#home" class="nav-link">Home</a>
@@ -58,6 +58,17 @@
 					<a href="#contact" class="link-outline">Get in Touch</a>
 				</div> <!-- .heading-container -->
 				<!-- Heading Container Ends -->
+				<div class="colour-container">
+					<div class="purple-container">
+						<i class="fa-solid fa-circle"></i>
+						<i class="fa-regular fa-circle"></i>
+					</div>
+					<div class="grayscale-container">
+						<i class="fa-solid fa-circle"></i>
+						<i class="fa-regular fa-circle"></i>
+					</div>
+				</div>
+
 			</div> <!-- .wrapper -->
 		</div> <!-- .background-img-container -->
 	</header>
@@ -204,7 +215,7 @@
 			<div class="wrapper contact-outer-box">
 				<div class="contact-left-box">
 					<h3 class="contact-header">Contact</h3>
-					<p class="contact-body">I'd love to hear from you! Send me a message or connect with me at the links below:
+					<p class="contact-body">I would love to chat code, art, cats & design! Send me a message or connect with me at the links below:
 					<div class="contact-icon-box">
 						<a href="https://www.linkedin.com/in/fiona-freemark/" target="_blank" title="linked in"><i
 								class="fa-brands fa-linkedin"></i></a>
@@ -223,13 +234,13 @@
 					<form class="contact-form" method="post" data-netlify="true" name="contact-form">
 						<!-- Name Input -->
 						<label for="client-name">Name</label>
-						<input type="text" id="client-name" class="client-name" name="client-name">
+						<input type="text" id="client-name" class="client-name" name="client-name" required>
 						<!-- Email Input -->
 						<label for="client-email">Email Address</label>
 						<input type="email" id="client-email" class="client-name" name="client-email" required>
 						<!-- Message Input -->
 						<label for="client-message">Message</label>
-						<textarea type="text" id="client-message" class="client-message" name="client-message" rows="8" required>Leave me a message here!
+						<textarea type="text" id="client-message" class="client-message" name="client-message" rows="8" required>Leave me a message!
 						</textarea>
 						<button name="message-submission" type="submit" class="button-outline form-button">Get in Touch</button>
 					</form>
