@@ -1,0 +1,89 @@
+@use "./variables" as *;
+
+// CONTACT SECTION -----------------------------------
+
+.contact-section {
+  background-color: $darkLilac;
+  padding: 10% 0;
+}
+
+.contact-outer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-left-box {
+  flex-basis: 30%;
+}
+
+.contact-right-box {
+  flex-basis: 70%;
+
+  a {
+    margin-left: 10%;
+  }
+}
+
+.contact-body {
+  padding: 3% 0 8% 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+.contact-icon-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.contact-icon-box i {
+  color: $neutralOrange;
+  font-size: 3rem;
+  margin: 5px;
+  padding: 5px;
+  transition: 300ms;
+  scale: 1;
+}
+
+.contact-icon-box i:hover,
+.contact-icon-box i:focus {
+  color: $lightPink;
+  scale: 0.8;
+}
+
+.contact-icon-box .fa-linkedin {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.contact-icon-box .fa-calendar {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0 5% 10%;
+
+  label {
+    margin: 2% 0 1%;
+  }
+}
+
+.client-name,
+.client-email,
+.client-message {
+  padding: 2%;
+  background-color: $neutralOrange;
+  border: $neutralOrange;
+  border-radius: 2px;
+}
+
+.form-button {
+  align-self: flex-start;
+  margin-top: 2%;
+}
