@@ -4,6 +4,7 @@
 
 .contact-section {
   background-color: $darkLilac;
+  position: relative;
   padding: 10% 0;
 }
 
@@ -35,6 +36,7 @@
 .contact-icon-box {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 
 }
@@ -87,3 +89,50 @@
   align-self: flex-start;
   margin-top: 2%;
 }
+
+.scroll-top-container {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.scroll-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: $fs-default;
+  transition: 300ms;
+  i {
+    font-size: $fs-xl;
+    border: none;
+    animation: fade 1s infinite ease-in-out;
+    &:hover {
+      animation: fade-hover 1s infinite ease-in-out;
+    }
+  }
+}
+
+@keyframes fade {
+
+  0%,
+  100% {
+    color: $lightLilac;
+  }
+
+  50% {
+    color: $navyBlue;
+  }
+}
+@keyframes fade-hover {
+
+  0%,
+  100% {
+    color: $lightLilac;
+  }
+
+  50% {
+    color: $accentOrange;
+  }
+}
+

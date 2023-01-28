@@ -18,6 +18,8 @@
 </head>
 
 <body>
+	<!-- Skip Link -->
+	<a href="#ff-title" class="skip-link">Skip to main content.</a>
 	<!-- HEADER SECTION----------------------------- -->
 	<header id="home">
 		<div class="background-img-container">
@@ -52,7 +54,7 @@
 				<!-- Navigation Menu Ends -->
 				<!-- Heading Container Starts -->
 				<div class="heading-container">
-					<h1>Fiona Freemark</h1>
+					<h1 id="ff-title">Fiona Freemark</h1>
 					<h2>Front-End Web Developer</h2>
 					<a href="#contact" class="link-outline">Get in Touch</a>
 				</div> <!-- .heading-container -->
@@ -60,10 +62,10 @@
 			</div> <!-- .wrapper -->
 		</div> <!-- .background-img-container -->
 	</header>
-	<!-- END OF HEADER SECTION ---------------------------->
-	<!-- MAIN BEGINS -------------------------------------->
+	<!-- END OF HEADER SECTION ------------------------->
+	<!-- MAIN BEGINS ----------------------------------->
 	<main>
-		<!-- ABOUT ME SECTION------------------------------->
+		<!-- ABOUT ME SECTION------------------------------>
 		<section class="about-me-section" id="about">
 			<!-- <div class="wrapper"> -->
 			<div class="about-me-container wrapper js-scroll">
@@ -73,10 +75,9 @@
 				</div>
 				<div class="about-me-text-container">
 					<h3 class="about-me-heading">About Me</h3>
-					<h4 class="about-titles"></h4>
 					<p class="about-me-text">Hi, my name is Fiona!</p>
-					<p class="about-me-text">I'm a <span class="span-accent">front-end developer</span> and
-						<span class="span-accent">artist</span> with 10 years of experience in the design, production and
+					<p class="about-me-text">I'm a front-end developer and
+						artist with 10 years of experience in the design, production and
 						presentation of
 						artworks in digital and physical platforms. I am passionate about building accessible, responsive code using
 						HTML5, CSS3, JavaScript, Firebase and React.
@@ -90,8 +91,8 @@
 			</div>
 			<!-- </div> -->
 		</section>
-		<!-- END OF ABOUT SECTION ---------------------------->
-		<!-- SKILLS SECTION ---------------------------------->
+		<!-- END OF ABOUT SECTION ------------------------>
+		<!-- SKILLS SECTION ------------------------------->
 		<section class="skills-section watch" id="skills">
 			<div class="wrapper skills-container js-scroll">
 				<h3 class="skills-heading">Skills</h3>
@@ -123,6 +124,10 @@
 					<div class="icon-box">
 						<i class="devicon-firebase-plain"></i>
 						<p>Firebase</p>
+					</div>
+					<div class="icon-box">
+						<i class="fa-solid fa-universal-access"></i>
+						<p>Accessibility</p>
 					</div>
 				</div><!-- End of .skills-icon-container -->
 			</div><!-- End of .wrapper .skills-container -->
@@ -197,49 +202,58 @@
 				</div><!-- End of .proj-container -->
 			</div><!-- End of .wrapper .proj-outer-box -->
 		</section>
-		<!-- END OF PROJECT SECTION-------------------------------->
-		<!-- CONTACT SECTION--------------------------------------->
+		<!-- END OF PROJECT SECTION------------------------->
+		<!-- CONTACT SECTION-------------------------------->
 		<section class="contact-section" id="contact">
-			<div class="wrapper contact-outer-box js-scroll">
-				<div class="contact-left-box">
-					<h3 class="contact-header">Contact</h3>
-					<p class="contact-body">If you'd like to chat code, art, cats or design, shoot me a message or connect with me at the links below!
-					<div class="contact-icon-box">
-						<a href="https://www.linkedin.com/in/fiona-freemark/" target="_blank" title="linked in"><i
-								class="fa-brands fa-linkedin"></i></a>
-						<a href="https://github.com/fionafreemark" target="_blank" title="github"><i
-								class="fa-brands fa-github"></i></a>
-						<a href="https://twitter.com/fiona_freemark" target="_blank" title="twitter"><i
-								class="fa-brands fa-twitter"></i></a>
-						<a href="mailto:freemark.dev@gmail.com" target="_blank" title="email me!"><i
-								class="fa-solid fa-envelope"></i></a>
-						<a href="https://calendly.com/fionafreemark/15-minute-chat" target="_blank" title="book a chat"><i
-								class="fa-solid fa-calendar"></i></a>
-					</div> <!-- End of .contact-icon-box -->
-				</div><!-- End of .contact-left-box -->
-				<div class="contact-right-box">
-					<!-- Form Begins ------------------------------------------>
-					<form class="contact-form" method="post" data-netlify="true" name="contact-form">
-						<!-- Name Input -->
-						<label for="client-name">Name</label>
-						<input type="text" id="client-name" class="client-name" name="client-name" required>
-						<!-- Email Input -->
-						<label for="client-email">Email Address</label>
-						<input type="email" id="client-email" class="client-name" name="client-email" required>
-						<!-- Message Input -->
-						<label for="client-message">Message</label>
-						<textarea type="text" id="client-message" class="client-message" name="client-message" rows="8" required>Leave me a message!
-						</textarea>
-						<button name="message-submission" type="submit" class="button-outline form-button">Get in Touch</button>
-					</form>
-					<!-- Form Ends -------------------------------------------->
-				</div><!-- End of .contact-right-box -->
+			<div class="wrapper">
+				<div class="contact-outer-box js-scroll">
+					<div class="contact-left-box">
+						<h3 class="contact-header">Contact</h3>
+						<p class="contact-body">If you'd like to chat about code, art, cats or projects, shoot me a
+							message or connect with me at the links below!
+						<div class="contact-icon-box">
+							<a href="https://www.linkedin.com/in/fiona-freemark/" target="_blank" title="linked in"><i
+									class="fa-brands fa-linkedin"></i></a>
+							<a href="https://github.com/fionafreemark" target="_blank" title="github"><i
+									class="fa-brands fa-github"></i></a>
+							<a href="https://twitter.com/fiona_freemark" target="_blank" title="twitter"><i
+									class="fa-brands fa-twitter"></i></a>
+							<a href="mailto:freemark.dev@gmail.com" target="_blank" title="email me!"><i
+									class="fa-solid fa-envelope"></i></a>
+							<a href="https://calendly.com/fionafreemark/15-minute-chat" target="_blank" title="book a chat"><i
+									class="fa-solid fa-calendar"></i></a>
+						</div> <!-- End of .contact-icon-box -->
+					</div><!-- End of .contact-left-box -->
+					<div class="contact-right-box">
+						<!-- Form Begins -------------------------->
+						<form class="contact-form" method="post" data-netlify="true" name="contact-form">
+							<!-- Name Input -->
+							<label for="client-name">Name</label>
+							<input type="text" id="client-name" class="client-name" name="client-name" required>
+							<!-- Email Input -->
+							<label for="client-email">Email Address</label>
+							<input type="email" id="client-email" class="client-name" name="client-email" required>
+							<!-- Message Input -->
+							<label for="client-message">Message</label>
+							<textarea type="text" id="client-message" class="client-message" name="client-message" rows="8" required>Leave me a message!
+													</textarea>
+							<button name="message-submission" type="submit" class="button-outline form-button">Get in Touch</button>
+						</form>
+						<!-- Form Ends ---------------------------->
+					</div><!-- End of .contact-right-box -->
+				</div> <!-- End of .contact-outer-box -->
+				<!-- Back to Top Icon -->
+				<div class="scroll-top-container">
+					<a href="#home" id="back-to-top" class="scroll-top"><i class="fa-solid fa-chevron-up"></i>
+					<label for="back-to-top" class="sr-only">Back To Top</label>
+					</a>
+				</div> <!-- End of .scroll-top-container -->
 			</div> <!-- End of .wrapper -->
 		</section>
-		<!-- END OF CONTACT SECTION----------------------------->
+		<!-- END OF CONTACT SECTION------------------------>
 	</main>
-	<!-- END OF MAIN ----------------------------------------->
-	<!-- FOOTER SECTION--------------------------------------->
+	<!-- END OF MAIN ------------------------------------>
+	<!-- FOOTER SECTION---------------------------------->
 	<footer>
 		<div class="wrapper footer-container">
 			<p>Built in 2023 by Fiona Freemark</p>

@@ -23,6 +23,7 @@
   flex-basis: 100%;
   flex-wrap: wrap;
   padding: 0% 1%;
+  transition: 500ms;
   i {
     color: $darkLilac;
   }
@@ -33,11 +34,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 10%;
+  flex-basis: 25%;
   min-height: 130px;
 }
 
 .fa-brands,
-.devicon-firebase-plain {
+.devicon-firebase-plain,
+.fa-universal-access {
   padding: 20px 10px;
 }
