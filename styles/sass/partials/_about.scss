@@ -18,13 +18,13 @@
 }
 
 .fiona-portrait {
-  object-fit: cover;
   object-position: 45%;
+  object-fit: cover;
   width: 90%;
-  border-radius: 50% 50% 0 0;
   min-width: 280px;
   padding: 2%;
   border: 3px solid $lightLilac;
+  border-radius: 50% 50% 0 0;
   box-shadow: 5px 5px 0px $lightLilac;
 }
 

@@ -14,15 +14,14 @@ h3 {
     color: $navyBlue;
     text-transform: lowercase;
     font-weight: 700;
-    font-size: $fs-logo-h1;
+    font-size: $fs-4xl;
 }
-
 
 h2,
 h4 {
     font-family: $ff-body;
-    font-size: $fs-h2;
-    font-weight: 400;
+    font-size: $fs-lrg;
+    font-weight: $fw-default;
     color: $navyBlue;
     text-transform: uppercase;
 }
@@ -35,20 +34,20 @@ input[type="email"],
 input[type="text"] {
     font-family: $ff-body;
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: $fw-default;
     color: $navyBlue;
     line-height: 3rem;
 }
 
 label,
 button {
-    font-weight: 400;
+    font-weight: $fw-default;
 }
 
 a,
 button {
     font-family: $ff-body;
-    font-size: $fs-body;
+    font-size: $fs-default;
     color: $navyBlue;
     text-decoration: none;
 }
@@ -60,13 +59,13 @@ a:focus {
 
 .nav-link {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: $fw-default;
     font-size: 1.6rem;
 }
 
 i {
-    color: $lightPink;
-    font-size: $fs-logo-h1;
+    color: $lightLilac;
+    font-size: $fs-4xl;
 }
 
 ul {

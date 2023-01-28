@@ -1,22 +1,21 @@
 @use "./variables" as *;
 
-// --------------- 1100px ---------------
+// --------------- 1100px ------------------------------
 @media (max-width: 1100px) {
   .wrapper {
     width: 85%;
   }
 
   h3 {
-    font-size: $fs-h1-media;
+    font-size: $fs-3xl;
   }
 
   h2,
   h4 {
-    font-size: $fs-h2-media;
+    font-size: $fs-med;
   }
 
   // ABOUT ME SECTION
-
   p,
   label,
   textarea,
@@ -27,7 +26,6 @@
   }
 
   // SKILLS SECTION
-
   .skills-icon-container {
     justify-content: center;
   }
@@ -37,7 +35,7 @@
   }
 
   i {
-    font-size: $fs-h1-media;
+    font-size: $fs-3xl;
   }
 
   // PROJECT SECTION
@@ -48,11 +46,11 @@
 
 }
 
-// --------------- 1100px ---------------
-// --------------- 800px ----------------
+// --------------- 1100px ------------------------------
+// --------------- 800px -------------------------------
 @media (max-width: 800px) {
   h1 {
-    font-size: $fs-h1-media
+    font-size: $fs-3xl
   }
 
   .menu-button {
@@ -88,11 +86,10 @@
     }
 
     a {
-      font-size: $fs-h2;
+      font-size: $fs-lrg;
       line-height: 6rem;
     }
   }
-
 
   // ABOUT ME SECTION -----------
   .about-me-container {
@@ -121,7 +118,7 @@
   }
 
   i {
-    font-size: $fs-h1-small;
+    font-size: $fs-2xl;
   }
 
   // PROJECTS SECTION
@@ -137,15 +134,11 @@
     text-align: justify;
   }
 
-
-
-
   .proj-box-1::after {
     bottom: -4%;
   }
 
   // CONTACT SECTION -----------------
-
   .contact-outer-box {
     flex-direction: column;
   }
@@ -163,9 +156,8 @@
     flex-wrap: wrap;
 
     i {
-      font-size: $fs-h1-xsmall;
+      font-size: $fs-xl;
     }
-
   }
 
   .contact-right-box {
@@ -193,25 +185,23 @@
 
 }
 
-
-// --------------- 800px ----------------
-// --------------- 500px ----------------
+// --------------- 800px -------------------------------
+// --------------- 500px -------------------------------
 @media (max-width: 500px) {
   h1 {
-    font-size: $fs-h1-small;
+    font-size: $fs-2xl;
   }
 
   h3 {
-    font-size: $fs-h1-small;
+    font-size: $fs-2xl;
   }
 
   h2,
   h4 {
-    font-size: $fs-h2-xsmall;
+    font-size: $fs-small;
   }
 
   // ABOUT ME SECTION
-
   .fiona-portrait {
     min-width: 120px;
   }
@@ -221,23 +211,21 @@
   }
 
   // SKILLS SECTION
-  // SKILLS SECTION
   .icon-box {
     flex-basis: 30%;
   }
 
   i {
-    font-size: $fs-h1-small;
+    font-size: $fs-2xl;
   }
 
   // PROJECT SECTION
-
   .proj-skills {
     display: flex;
     justify-content: space-between;
 
     li {
-      font-size: $fs-body;
+      font-size: $fs-default;
     }
   }
 
@@ -257,14 +245,13 @@
     margin-right: 0;
   }
 
-
   // CONTACT SECTION
   .contact-section {
     padding-bottom: 15%;
   }
 
   .contact-icon-box i {
-    font-size: $fs-h2;
+    font-size: $fs-lrg;
   }
 
   .contact-icon-box .fa-linkedin {
@@ -277,10 +264,4 @@
     padding-right: 5px;
   }
 
-
 }
-
-
-
-
-// --------------- 500px ----------------

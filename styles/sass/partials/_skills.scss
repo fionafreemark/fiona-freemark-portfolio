@@ -23,15 +23,18 @@
   flex-basis: 100%;
   flex-wrap: wrap;
   padding: 0% 1%;
+  i {
+    color: $darkLilac;
+  }
 }
 
 .icon-box {
-  flex-basis: 10%;
-  min-height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-basis: 10%;
+  min-height: 130px;
 }
 
 .fa-brands,
