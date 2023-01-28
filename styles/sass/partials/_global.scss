@@ -43,25 +43,41 @@ html {
 	display: inline-block;
 	padding: 10px 15px;
 	color: $navyBlue;
-	background-color: $lightLilac;
-	border: 3px solid $lightLilac;
+	background-color: $transparent;
+	border: 2px solid $navyBlue;
+	z-index: 10;
 	border-radius: 2px;
-	box-shadow: 8px 8px 10px $navyBlue;
+	box-shadow: 8px 8px 0px $navyBlue;
 	transition: 500ms;
+	position: relative;
 }
+
+// .button-outline::before,
+// .link-outline::before {
+// 	position: absolute;
+// 	content: "";
+// 	display: block;
+// 	background-color: $lightLilac;
+// 	width: 100%;
+// 	height: 100%;
+// 	z-index: 0;
+// 	top: 5px;
+// 	left: 5px;
+// }
+
 
 .button-outline:hover,
 .button-outline:focus,
 .link-outline:hover,
 .link-outline:focus {
 	color: $navyBlue;
-	background-color: $accentOrange;
-	border: 3px solid $accentOrange;
-	box-shadow: 8px 8px 10px $navyBlue;
+	background-color: $transparent;
+	border: 2px solid $navyBlue;
+	box-shadow: 8px 8px 0px $accentOrange;
 }
 
 .button-outline:active,
 .link-outline:active {
 	transform: translateX(4px) translateY(4px);
-	box-shadow: 4px 4px 10px $navyBlue;
+	box-shadow: 4px 4px 0px $navyBlue;
 }

@@ -1,5 +1,23 @@
 @use "./variables" as *;
 
+/* Navigation Skip Link */
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: -0px;
+    z-index: 999;
+    background: $transparent;
+    color: $navyBlue;
+    font-size: 1.4rem;
+    padding: 5px;
+    border: 1px solid $navyBlue;
+}
+
+.skip-link:focus {
+    left: 0;
+    color: $navyBlue;
+}
+
 header {
     background: linear-gradient(180deg, $lightLilac 0%, $darkLilac 90%);
     background-image: url(../assets/fiona-freemark-cloud-background-lavender.jpg);
@@ -86,6 +104,7 @@ background-color: $accentOrange;
 
 .nav-link {
     padding: 10px 15px;
+    font-size: $fs-small;
 }
 
 // Heading Container Styles

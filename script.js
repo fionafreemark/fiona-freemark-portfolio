@@ -54,7 +54,7 @@ mobileMenu.closeMenuEvent = () => {
 // Scroll event to change the mobile menu button from navy to orange when its hovering over the "skills" section.
 mobileMenu.skillsSection = document.getElementById('skills');
 mobileMenu.skillsPosition = mobileMenu.skillsSection.getBoundingClientRect();
-// console.log(mobileMenu.skillsPosition);
+console.log(mobileMenu.skillsPosition);
 mobileMenu.projectSection = document.getElementById('projects');
 mobileMenu.projectPosition = mobileMenu.projectSection.getBoundingClientRect();
 // console.log(mobileMenu.projectPosition);
@@ -63,10 +63,13 @@ mobileMenu.projectPositionY = mobileMenu.projectPosition.y;
 // console.log(mobileMenu.skillsPositionY);
 // console.log(mobileMenu.projectPositionY);
 
+
+
 mobileMenu.menuScrollEvent = () => {
   document.addEventListener('scroll', () => {
+    console.log(window.scrollY);
     // console.log(Math.floor(window.scrollY));
-    if (Math.floor(window.scrollY) > mobileMenu.skillsPositionY && Math.floor(window.scrollY) < mobileMenu.projectPositionY) {
+    if (Math.floor(window.scrollY) > (mobileMenu.skillsPositionY * 1.18) && Math.floor(window.scrollY) < mobileMenu.projectPositionY) {
       // console.log(window.scrollY);  
       mobileMenu.menuButtonLines.forEach((line) => {
           line.classList.add('scroll-on');
@@ -85,55 +88,55 @@ mobileMenu.menuScrollEvent = () => {
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
 
 
-scrollAnimations = {};
-// Scroll event to change the mobile menu button from navy to orange when its hovering over the "skills" section.
-scrollAnimations.aboutSection = document.getElementById('about');
-scrollAnimations.skillsSection = document.getElementById('skills');
-scrollAnimations.projectSection = document.getElementById('projects');
-scrollAnimations.contactSection = document.getElementById('contact');
+// scrollAnimations = {};
+// // Scroll event to change the mobile menu button from navy to orange when its hovering over the "skills" section.
+// scrollAnimations.aboutSection = document.getElementById('about');
+// scrollAnimations.skillsSection = document.getElementById('skills');
+// scrollAnimations.projectSection = document.getElementById('projects');
+// scrollAnimations.contactSection = document.getElementById('contact');
 
-scrollAnimations.skillsPosition = scrollAnimations.skillsSection.getBoundingClientRect();
-// console.logscrollAnimations(mobileMenu.skillsPosition);
-scrollAnimations.projectPosition = scrollAnimations.projectSection.getBoundingClientRect();
-// console.log(mobileMenu.projectPosition);
-scrollAnimations.skillsPositionY = scrollAnimations.skillsPosition.y;
-scrollAnimations.projectPositionY = scrollAnimations.projectPosition.y;
-// console.log(mobileMenu.skillsPositionY);
-// console.log(mobileMenu.projectPositionY);
+// scrollAnimations.skillsPosition = scrollAnimations.skillsSection.getBoundingClientRect();
+// // console.logscrollAnimations(mobileMenu.skillsPosition);
+// scrollAnimations.projectPosition = scrollAnimations.projectSection.getBoundingClientRect();
+// // console.log(mobileMenu.projectPosition);
+// scrollAnimations.skillsPositionY = scrollAnimations.skillsPosition.y;
+// scrollAnimations.projectPositionY = scrollAnimations.projectPosition.y;
+// // console.log(mobileMenu.skillsPositionY);
+// // console.log(mobileMenu.projectPositionY);
 
-mobileMenu.menuScrollEvent = () => {
-  document.addEventListener('scroll', () => {
-    // console.log(Math.floor(window.scrollY));
-    if (Math.floor(window.scrollY) > mobileMenu.skillsPositionY && Math.floor(window.scrollY) < mobileMenu.projectPositionY) {
-      // console.log(window.scrollY);  
-      mobileMenu.menuButtonLines.forEach((line) => {
-        line.classList.add('scroll-on');
-      })
+// mobileMenu.menuScrollEvent = () => {
+//   document.addEventListener('scroll', () => {
+//     // console.log(Math.floor(window.scrollY));
+//     if (Math.floor(window.scrollY) > mobileMenu.skillsPositionY && Math.floor(window.scrollY) < mobileMenu.projectPositionY) {
+//       // console.log(window.scrollY);  
+//       mobileMenu.menuButtonLines.forEach((line) => {
+//         line.classList.add('scroll-on');
+//       })
 
-    } else {
-      mobileMenu.menuButtonLines.forEach((line) => {
-        line.classList.remove('scroll-on');
-      })
-    };
-  })
-}
-
-
+//     } else {
+//       mobileMenu.menuButtonLines.forEach((line) => {
+//         line.classList.remove('scroll-on');
+//       })
+//     };
+//   })
+// }
 
 
-const scrollElement = document.querySelectorAll(".js-scroll");
-const displayScrollElement = () => {
-  scrollElement.forEach ((element) => {
-    console.log('hello');
-    element.classList.add('scrolled');
-  })
-}
 
-const hideScrollElement = () => {
-  scrollElement.forEach((element) => {
-    element.classList.remove('scrolled');
-  })
-}
+
+// const scrollElement = document.querySelectorAll(".js-scroll");
+// const displayScrollElement = () => {
+//   scrollElement.forEach ((element) => {
+//     console.log('hello');
+//     element.classList.add('scrolled');
+//   })
+// }
+
+// const hideScrollElement = () => {
+//   scrollElement.forEach((element) => {
+//     element.classList.remove('scrolled');
+//   })
+// }
 
 
 
