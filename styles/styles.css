@@ -265,7 +265,7 @@ img {
 
 .wrapper {
   max-width: 1200px;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -277,13 +277,13 @@ html {
 .link-outline {
   display: inline-block;
   padding: 10px 15px;
-  color: #021535;
+  color: #0f1922;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #021535;
+  border: 2px solid #0f1922;
   z-index: 10;
   border-radius: 2px;
-  -webkit-box-shadow: 8px 8px 0px #021535;
-          box-shadow: 8px 8px 0px #021535;
+  -webkit-box-shadow: 8px 8px 0px #0f1922;
+          box-shadow: 8px 8px 0px #0f1922;
   -webkit-transition: 500ms;
   transition: 500ms;
   position: relative;
@@ -293,9 +293,9 @@ html {
 .button-outline:focus,
 .link-outline:hover,
 .link-outline:focus {
-  color: #021535;
+  color: #0f1922;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #021535;
+  border: 2px solid #0f1922;
   -webkit-box-shadow: 8px 8px 0px #f27100;
           box-shadow: 8px 8px 0px #f27100;
 }
@@ -304,20 +304,20 @@ html {
 .link-outline:active {
   -webkit-transform: translateX(4px) translateY(4px);
           transform: translateX(4px) translateY(4px);
-  -webkit-box-shadow: 4px 4px 0px #021535;
-          box-shadow: 4px 4px 0px #021535;
+  -webkit-box-shadow: 4px 4px 0px #0f1922;
+          box-shadow: 4px 4px 0px #0f1922;
 }
 
 html {
   font-size: 62.5%;
-  color: #021535;
+  color: #0f1922;
 }
 
 h1,
 h3 {
   font-family: "Cormorant Infant", serif;
   font-style: italic;
-  color: #021535;
+  color: #0f1922;
   text-transform: lowercase;
   font-weight: 700;
   font-size: 10rem;
@@ -328,7 +328,7 @@ h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   font-weight: 400;
-  color: #021535;
+  color: #0f1922;
   text-transform: uppercase;
 }
 
@@ -341,7 +341,7 @@ input[type=text] {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
-  color: #021535;
+  color: #0f1922;
   line-height: 3rem;
 }
 
@@ -354,7 +354,7 @@ a,
 button {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  color: #021535;
+  color: #0f1922;
   text-decoration: none;
 }
 
@@ -385,15 +385,15 @@ ul {
   top: 0px;
   z-index: 999;
   background: rgba(0, 0, 0, 0);
-  color: #021535;
+  color: #0f1922;
   font-size: 1.4rem;
   padding: 5px;
-  border: 1px solid #021535;
+  border: 1px solid #0f1922;
 }
 
 .skip-link:focus {
   left: 0;
-  color: #021535;
+  color: #0f1922;
 }
 
 header {
@@ -437,7 +437,7 @@ header {
   height: 3px;
   top: 6px;
   left: 1px;
-  background-color: #021535;
+  background-color: #0f1922;
   border-radius: 2px;
 }
 
@@ -495,7 +495,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 63px);
 }
 .heading-container h2 {
   padding: 2.5% 0 1.5%;
@@ -520,9 +520,9 @@ header {
 .about-me-img-container {
   -ms-flex-item-align: center;
       align-self: center;
-  -webkit-box-flex: 35%;
-      -ms-flex: 35%;
-          flex: 35%;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
   margin-top: 1%;
 }
 
@@ -558,11 +558,11 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 3%;
+  padding: 0 2%;
   margin-left: 5%;
 }
 
@@ -576,8 +576,8 @@ header {
 }
 
 .skills-section {
-  background-color: #021535;
-  padding: 10% 0;
+  background-color: #0f1922;
+  padding: 10% 0 15%;
 }
 .skills-section h3,
 .skills-section p {
@@ -688,7 +688,7 @@ header {
           align-items: center;
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
-  margin: 4% 5% 6% 0;
+  margin: 4% 0% 6% 0;
 }
 
 .proj-text-container {
@@ -919,7 +919,7 @@ header {
     color: #edd1f7;
   }
   50% {
-    color: #021535;
+    color: #0f1922;
   }
 }
 
@@ -928,7 +928,7 @@ header {
     color: #edd1f7;
   }
   50% {
-    color: #021535;
+    color: #0f1922;
   }
 }
 @-webkit-keyframes fade-hover {
@@ -948,7 +948,7 @@ header {
   }
 }
 footer {
-  background-color: #021535;
+  background-color: #0f1922;
 }
 
 .footer-container {
@@ -1098,7 +1098,7 @@ input[type=text] {
     bottom: -4%;
   }
   .contact-section {
-    padding: 10% 0 15% 0;
+    padding: 10% 0 20% 0;
   }
   .contact-outer-box {
     -webkit-box-orient: vertical;
@@ -1139,14 +1139,14 @@ input[type=text] {
     padding: 2% 2%;
   }
   .form-button {
-    text-align: center;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    width: 100%;
+    width: auto;
     margin-top: 5%;
   }
   .scroll-top-container {
     right: 46%;
+    bottom: 2%;
   }
 }
 @media (max-width: 500px) {
@@ -1206,7 +1206,7 @@ h4 {
     margin-right: 0;
   }
   .contact-section {
-    padding-bottom: 15%;
+    padding-bottom: 20%;
   }
   .contact-icon-box i {
     font-size: 3rem;
@@ -1218,5 +1218,8 @@ h4 {
   .contact-icon-box .fa-calendar {
     margin-right: 5px;
     padding-right: 5px;
+  }
+  .form-button {
+    width: 100%;
   }
 }

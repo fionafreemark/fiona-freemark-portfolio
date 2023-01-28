@@ -107,12 +107,13 @@ background-color: $accentOrange;
     font-size: $fs-small;
 }
 
+
 // Heading Container Styles
 .heading-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - 40px);
+    height: calc(100vh - 63px);
 
     h2 {
         padding: 2.5% 0 1.5%;
