@@ -1,4 +1,4 @@
-// Mobile menu toggle:
+// Mobile menu toggle feature:
 const mobileMenu = {};
 
 // Init function:
@@ -17,7 +17,7 @@ mobileMenu.menuButtonLines = document.querySelectorAll('.menu-open');
 
 // Event listener to listen for click, triggers menu button animation & opens menu
 mobileMenu.openMenuEvent = () => {
-  mobileMenu.menuButton.addEventListener('click', function () {
+  mobileMenu.menuButton.addEventListener('click', () => {
     mobileMenu.menuButton.classList.toggle('menu-close');
     mobileMenu.nav.classList.toggle('show-nav');
   });
@@ -27,7 +27,7 @@ mobileMenu.openMenuEvent = () => {
 mobileMenu.closeMenuEvent = () => {
   // forEach loop required to assign the event listener to each individual nav-link.
   mobileMenu.mobileLinks.forEach((link) => {
-    link.addEventListener('click', function () {
+    link.addEventListener('click', () => {
       mobileMenu.menuButton.classList.toggle('menu-close');
       mobileMenu.nav.classList.toggle('show-nav');
     });
@@ -67,10 +67,11 @@ mobileMenu.menuScrollEvent = () => {
   document.addEventListener('scroll', () => {
     // console.log(Math.floor(window.scrollY));
     if (Math.floor(window.scrollY) > mobileMenu.skillsPositionY && Math.floor(window.scrollY) < mobileMenu.projectPositionY) {
-      console.log(window.scrollY);  
+      // console.log(window.scrollY);  
       mobileMenu.menuButtonLines.forEach((line) => {
           line.classList.add('scroll-on');
         })
+      
       } else {
       mobileMenu.menuButtonLines.forEach((line) => {
         line.classList.remove('scroll-on');
@@ -82,6 +83,60 @@ mobileMenu.menuScrollEvent = () => {
 // MDN Links:
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll_event
 // https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+
+
+scrollAnimations = {};
+// Scroll event to change the mobile menu button from navy to orange when its hovering over the "skills" section.
+scrollAnimations.aboutSection = document.getElementById('about');
+scrollAnimations.skillsSection = document.getElementById('skills');
+scrollAnimations.projectSection = document.getElementById('projects');
+scrollAnimations.contactSection = document.getElementById('contact');
+
+scrollAnimations.skillsPosition = scrollAnimations.skillsSection.getBoundingClientRect();
+// console.logscrollAnimations(mobileMenu.skillsPosition);
+scrollAnimations.projectPosition = scrollAnimations.projectSection.getBoundingClientRect();
+// console.log(mobileMenu.projectPosition);
+scrollAnimations.skillsPositionY = scrollAnimations.skillsPosition.y;
+scrollAnimations.projectPositionY = scrollAnimations.projectPosition.y;
+// console.log(mobileMenu.skillsPositionY);
+// console.log(mobileMenu.projectPositionY);
+
+mobileMenu.menuScrollEvent = () => {
+  document.addEventListener('scroll', () => {
+    // console.log(Math.floor(window.scrollY));
+    if (Math.floor(window.scrollY) > mobileMenu.skillsPositionY && Math.floor(window.scrollY) < mobileMenu.projectPositionY) {
+      // console.log(window.scrollY);  
+      mobileMenu.menuButtonLines.forEach((line) => {
+        line.classList.add('scroll-on');
+      })
+
+    } else {
+      mobileMenu.menuButtonLines.forEach((line) => {
+        line.classList.remove('scroll-on');
+      })
+    };
+  })
+}
+
+
+
+
+const scrollElement = document.querySelectorAll(".js-scroll");
+const displayScrollElement = () => {
+  scrollElement.forEach ((element) => {
+    console.log('hello');
+    element.classList.add('scrolled');
+  })
+}
+
+const hideScrollElement = () => {
+  scrollElement.forEach((element) => {
+    element.classList.remove('scrolled');
+  })
+}
+
+
+
 
 
 mobileMenu.init();

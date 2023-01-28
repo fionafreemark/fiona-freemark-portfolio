@@ -37,7 +37,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-// Outlined Button Styles -------------------
+// Global Button/Link Styles -------------------
 .button-outline,
 .link-outline {
 	display: inline-block;
@@ -65,5 +65,3 @@ html {
 	transform: translateX(4px) translateY(4px);
 	box-shadow: 4px 4px 10px $navyBlue;
 }
-
-// End of Outlined Button Styles ---------------

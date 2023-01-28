@@ -1,37 +1,25 @@
 // Colours
-$lightLilac: #E5D1F7;
-$darkLilac: #c0bbee;
-$lightPink:#E5D1F7 /* #FDCCE9 */; 
-$navyBlue: #122952;
+$lightLilac: #edd1f7;
+$darkLilac: #B6B0EF;
+$navyBlue: #021535;
 $accentOrange: #FF8600;
-$white: #FFF;
-$black: #000;
 $transparent: #00000000;
-$neutralOrange: #fefbf9; // white
+$neutralOrange: #fffcfa;
 
 // Fonts Sizes
 $fs-global: 62.5%;
-$fs-logo-h1: 10rem;
-$fs-h1-media: 8rem;
-$fs-h1-small: 6rem;
-$fs-h1-xsmall: 5rem;
-$fs-h2: 3rem;
-$fs-h2-media: 2.2rem;
-$fs-h2-xsmall: 1.7rem;
-$fs-body: 1.6rem;
+$fs-4xl: 10rem; 
+$fs-3xl: 8rem; 
+$fs-2xl: 6rem;
+$fs-xl: 5rem;
+$fs-lrg: 3rem;
+$fs-med: 2.2rem;
+$fs-small: 1.7rem;
+$fs-default: 1.6rem;
 
+// Font Weights
+$fw-default: 400;
 
 // Font Family
 $ff-headings: 'Cormorant Infant', serif; /* 700 Italic */
-$ff-body: 'Montserrat', sans-serif; /* in 400/ 600 */
-
-
-$neutralOrange: #fffaf7; // white
-// $lightPink: #f9dadc; // lightLilac
-$burntOrange: #BE410D; //navyBlue 
-$cardinal: #D92625; //accentOrange
-$darkPlum: #360113; //accejt
-// Accent Colours: 
-$darkLavender: #7A506A;
-$oliveGreen: #62532D;
-$mustardYellow: #DCA225;
+$ff-body: 'Montserrat', sans-serif; /* in $fw-default/ 600 */
