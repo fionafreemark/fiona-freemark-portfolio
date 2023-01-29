@@ -7,19 +7,20 @@
     top: -0px;
     z-index: 999;
     background: $transparent;
-    color: $navyBlue;
-    font-size: 1.4rem;
+    color: $navy-blue;
+    font-size: $fs-default;
     padding: 5px;
-    border: 1px solid $navyBlue;
+    border: 1px solid $navy-blue;
 }
 
 .skip-link:focus {
     left: 0;
-    color: $navyBlue;
+    color: $navy-blue;
 }
 
+// Header Section
 header {
-    background: linear-gradient(180deg, $lightLilac 0%, $darkLilac 90%);
+    background: linear-gradient(180deg, $light-lilac 0%, $dark-lilac 90%);
     background-image: url(../assets/fiona-freemark-cloud-background-lavender.jpg);
     background-size: cover;
     background-position: center;
@@ -31,7 +32,7 @@ header {
 .menu-button {
     display: none;
     position: fixed;
-    width: 32px;
+    width: 36px;
     height: 30px;
     top: 30px;
     right: 25px;
@@ -39,18 +40,18 @@ header {
     padding: 0;
     margin: 0;
     border: none;
-    background-color: $transparent;
-    transition: 300ms;
+    background-color: $transparent-lilac;
+    box-shadow: 0 0 2px 2px $transparent-lilac;
+    border-radius: 2px;
+    transition: 300ms ease-in-out;
 
     &:hover,
     &:focus {
-        opacity: 0.5;
+        opacity: 0.9;
+        background-color: $off-white;
+        box-shadow: 0 0 2px 2px $off-white;
         scale: 0.9;
     }
-}
-
-.menu-open.scroll-on {
-    background-color: $lightLilac;
 }
 
 // Hamburger menu default styles:
@@ -60,12 +61,13 @@ header {
     width: 30px;
     height: 3px;
     top: 6px;
-    left: 1px;
-    background-color: $navyBlue;
+    left: 3px;
+    background-color: $navy-blue;
     border-radius: 2px;
+    transition: 300ms;
 }
 
-// Spacing the menu lines
+// Spacing the menu lines:
 .line-2 {
     top: 14px;
 }
@@ -113,13 +115,8 @@ header {
 
 .nav-link:hover,
 .nav-link:focus {
-    border: 2px solid $navyBlue;
+    border: 2px solid $navy-blue;
 }
-
-
-
-
-
 
 // Heading Container Styles
 .heading-container {

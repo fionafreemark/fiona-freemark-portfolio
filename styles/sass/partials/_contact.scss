@@ -3,7 +3,7 @@
 // CONTACT SECTION -----------------------------------
 
 .contact-section {
-  background-color: $lightLilac;
+  background-color: $light-lilac;
   position: relative;
   padding: 10% 0;
 }
@@ -44,15 +44,15 @@
 .contact-icon-box i {
   margin: 5px;
   padding: 5px;
-  color: $accentOrange;
-  font-size: 3rem;
+  color: $deep-purple;
+  font-size: $fs-lrg;
   transition: 300ms;
   scale: 1;
 }
 
 .contact-icon-box i:hover,
 .contact-icon-box i:focus {
-  color: $neutralOrange;
+  color: $off-white;
   scale: 0.9;
 }
 
@@ -80,8 +80,8 @@
 .client-email,
 .client-message {
   padding: 2%;
-  background-color: $neutralOrange;
-  border: $neutralOrange;
+  background-color: $off-white;
+  border: $off-white;
   border-radius: 2px;
 }
 
@@ -104,7 +104,7 @@
   font-size: $fs-default;
   transition: 300ms;
   i {
-    font-size: $fs-xl;
+    font-size: $fs-lrg;
     border: none;
     animation: fade 1s infinite ease-in-out;
     &:hover {
@@ -117,22 +117,22 @@
 
   0%,
   100% {
-    color: $lightLilac;
+    color: $light-lilac;
   }
 
   50% {
-    color: $navyBlue;
+    color: $navy-blue;
   }
 }
 @keyframes fade-hover {
 
   0%,
   100% {
-    color: $lightLilac;
+    color: $light-lilac;
   }
 
   50% {
-    color: $accentOrange;
+    color: $deep-purple;
   }
 }
 

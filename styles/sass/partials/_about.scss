@@ -3,7 +3,7 @@
 // ABOUT ME SECTION -----------------------------------
 
 .about-me-section {
-  background-color: $neutralOrange;
+  background-color: $off-white;
   padding: 10% 0;
 }
 
@@ -23,13 +23,13 @@
   width: 90%;
   min-width: 280px;
   padding: 2%;
-  border: 3px solid $lightLilac;
+  border: 3px solid $light-lilac;
   border-radius: 50% 50% 0 0;
-  box-shadow: 5px 5px 0px $lightLilac;
+  box-shadow: 5px 5px 0px $light-lilac;
 }
 
 .about-me-heading {
-  color: $accentOrange;
+  color: $deep-purple;
 }
 
 .about-me-text-container {
@@ -45,7 +45,6 @@
 
 .about-me-text {
   padding-bottom: 2%;
-  font-size: 1.8rem;
 }
 
 .about-titles {
