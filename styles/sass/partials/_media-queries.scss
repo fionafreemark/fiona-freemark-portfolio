@@ -140,7 +140,7 @@
 
   // CONTACT SECTION -----------------
   .contact-section {
-    padding: 10% 0 15% 0;
+    padding: 10% 0 20% 0;
   }
 
   .contact-outer-box {
@@ -181,14 +181,14 @@
   }
 
   .form-button {
-    text-align: center;
     align-self: flex-start;
-    width: 100%;
+    width: auto;
     margin-top: 5%;
   }
 
   .scroll-top-container {
     right: 46%;
+    bottom: 2%;
   }
 
 }
@@ -255,7 +255,7 @@
 
   // CONTACT SECTION
   .contact-section {
-    padding-bottom: 15%;
+    padding-bottom: 20%;
   }
 
   .contact-icon-box i {
@@ -271,5 +271,9 @@
     margin-right: 5px;
     padding-right: 5px;
   }
+
+        .form-button {
+          width: 100%;
+        }
 
 }

@@ -50,11 +50,7 @@ button {
     font-size: $fs-default;
     color: $navyBlue;
     text-decoration: none;
-}
-
-a:hover,
-a:focus {
-    color: $accentOrange;
+    border: 2px solid $transparent;
 }
 
 .nav-link {

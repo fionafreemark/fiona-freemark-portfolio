@@ -3,7 +3,7 @@
 // CONTACT SECTION -----------------------------------
 
 .contact-section {
-  background-color: $darkLilac;
+  background-color: $lightLilac;
   position: relative;
   padding: 10% 0;
 }
@@ -44,7 +44,7 @@
 .contact-icon-box i {
   margin: 5px;
   padding: 5px;
-  color: $neutralOrange;
+  color: $accentOrange;
   font-size: 3rem;
   transition: 300ms;
   scale: 1;
@@ -52,8 +52,8 @@
 
 .contact-icon-box i:hover,
 .contact-icon-box i:focus {
-  color: $lightLilac;
-  scale: 0.8;
+  color: $neutralOrange;
+  scale: 0.9;
 }
 
 .contact-icon-box .fa-linkedin {

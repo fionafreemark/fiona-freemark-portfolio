@@ -50,7 +50,7 @@ header {
 }
 
 .menu-open.scroll-on {
-background-color: $accentOrange;
+    background-color: $lightLilac;
 }
 
 // Hamburger menu default styles:
@@ -60,7 +60,7 @@ background-color: $accentOrange;
     width: 30px;
     height: 3px;
     top: 6px;
-    left:1px;
+    left: 1px;
     background-color: $navyBlue;
     border-radius: 2px;
 }
@@ -103,16 +103,30 @@ background-color: $accentOrange;
 }
 
 .nav-link {
-    padding: 10px 15px;
+    padding: 8px 12px;
+    margin: 0 5px;
     font-size: $fs-small;
+    transition: 300ms;
+    border: 2px solid $transparent;
+    border-radius: 2px;
 }
+
+.nav-link:hover,
+.nav-link:focus {
+    border: 2px solid $navyBlue;
+}
+
+
+
+
+
 
 // Heading Container Styles
 .heading-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - 40px);
+    height: calc(100vh - 63px);
 
     h2 {
         padding: 2.5% 0 1.5%;

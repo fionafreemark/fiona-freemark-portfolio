@@ -6,16 +6,14 @@ mobileMenu.init = () => {
   mobileMenu.closeMenuEvent();
   mobileMenu.openMenuEvent();
   mobileMenu.menuScrollEvent();
-  // mobileMenu.elementPosition();
 }
-
 
 mobileMenu.menuButton = document.querySelector('.menu-button');
 mobileMenu.nav = document.querySelector('.nav-container');
 mobileMenu.mobileLinks = document.querySelectorAll('.nav-link');
 mobileMenu.menuButtonLines = document.querySelectorAll('.menu-open');
 
-// Event listener to listen for click, triggers menu button animation & opens menu
+// Event listener to listen for click, triggers menu button animation & opens menu:
 mobileMenu.openMenuEvent = () => {
   mobileMenu.menuButton.addEventListener('click', () => {
     mobileMenu.menuButton.classList.toggle('menu-close');
@@ -23,9 +21,9 @@ mobileMenu.openMenuEvent = () => {
   });
 }
 
-// Event listener to listen for click, triggers menu button animation & closes menu
+// Event listener to listen for click, triggers menu button animation & closes menu:
 mobileMenu.closeMenuEvent = () => {
-  // forEach loop required to assign the event listener to each individual nav-link.
+  // forEach loop required to assign the event listener to each individual nav-link:
   mobileMenu.mobileLinks.forEach((link) => {
     link.addEventListener('click', () => {
       mobileMenu.menuButton.classList.toggle('menu-close');
@@ -34,112 +32,36 @@ mobileMenu.closeMenuEvent = () => {
   });
 }
 
-// Scroll Event to change the hamburger menu from blue to orange so it displays on the dark background of the Skills Section.
-// mobileMenu.menuScrollEvent = () => {
-//   document.addEventListener('scroll', () => {
-//     // console.log(Math.floor(window.scrollY));
-//     if (Math.floor(window.scrollY) > 1705 && Math.floor(window.scrollY) < 2205) {
-//       console.log(window.scrollY);  
-//       mobileMenu.menuButtonLines.forEach((line) => {
-//           line.classList.add('scroll-on');
-//         })
-//       } else {
-//       mobileMenu.menuButtonLines.forEach((line) => {
-//         line.classList.remove('scroll-on');
-//       })
-//       };
-//   })
-// }
-
 // Scroll event to change the mobile menu button from navy to orange when its hovering over the "skills" section.
+// Find the y-axis position of the skills section:
 mobileMenu.skillsSection = document.getElementById('skills');
 mobileMenu.skillsPosition = mobileMenu.skillsSection.getBoundingClientRect();
 console.log(mobileMenu.skillsPosition);
+mobileMenu.skillsPositionY = mobileMenu.skillsPosition.y;
+// Find the y-axis position of the projects section:
 mobileMenu.projectSection = document.getElementById('projects');
 mobileMenu.projectPosition = mobileMenu.projectSection.getBoundingClientRect();
-// console.log(mobileMenu.projectPosition);
-mobileMenu.skillsPositionY = mobileMenu.skillsPosition.y;
 mobileMenu.projectPositionY = mobileMenu.projectPosition.y;
-// console.log(mobileMenu.skillsPositionY);
-// console.log(mobileMenu.projectPositionY);
 
-
-
+// Event listener to add a contrasting colour to my menu button when it scrolls over the dark background of my "skills section":
 mobileMenu.menuScrollEvent = () => {
   document.addEventListener('scroll', () => {
     console.log(window.scrollY);
     // console.log(Math.floor(window.scrollY));
-    if (Math.floor(window.scrollY) > (mobileMenu.skillsPositionY * 1.18) && Math.floor(window.scrollY) < mobileMenu.projectPositionY) {
+    // If the window scroll position is > the position of skills section AND the window scroll position is < the position of the projects section, then run a forEach loop to add the class "scroll-on" to each line that makes up my hamburger menu.
+    if (Math.floor(window.scrollY / 1.13) >= mobileMenu.skillsPositionY && Math.floor(window.scrollY / 1.12) <= mobileMenu.projectPositionY) {
       // console.log(window.scrollY);  
       mobileMenu.menuButtonLines.forEach((line) => {
-          line.classList.add('scroll-on');
-        })
-      
-      } else {
+        line.classList.add('scroll-on');
+      })
+      // Else statement to remove "scroll-on" class, otherwise the contrasting colour remains.
+    } else {
       mobileMenu.menuButtonLines.forEach((line) => {
         line.classList.remove('scroll-on');
       })
-      };
+    };
   })
 }
 
-// MDN Links:
-// https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll_event
-// https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
-
-
-// scrollAnimations = {};
-// // Scroll event to change the mobile menu button from navy to orange when its hovering over the "skills" section.
-// scrollAnimations.aboutSection = document.getElementById('about');
-// scrollAnimations.skillsSection = document.getElementById('skills');
-// scrollAnimations.projectSection = document.getElementById('projects');
-// scrollAnimations.contactSection = document.getElementById('contact');
-
-// scrollAnimations.skillsPosition = scrollAnimations.skillsSection.getBoundingClientRect();
-// // console.logscrollAnimations(mobileMenu.skillsPosition);
-// scrollAnimations.projectPosition = scrollAnimations.projectSection.getBoundingClientRect();
-// // console.log(mobileMenu.projectPosition);
-// scrollAnimations.skillsPositionY = scrollAnimations.skillsPosition.y;
-// scrollAnimations.projectPositionY = scrollAnimations.projectPosition.y;
-// // console.log(mobileMenu.skillsPositionY);
-// // console.log(mobileMenu.projectPositionY);
-
-// mobileMenu.menuScrollEvent = () => {
-//   document.addEventListener('scroll', () => {
-//     // console.log(Math.floor(window.scrollY));
-//     if (Math.floor(window.scrollY) > mobileMenu.skillsPositionY && Math.floor(window.scrollY) < mobileMenu.projectPositionY) {
-//       // console.log(window.scrollY);  
-//       mobileMenu.menuButtonLines.forEach((line) => {
-//         line.classList.add('scroll-on');
-//       })
-
-//     } else {
-//       mobileMenu.menuButtonLines.forEach((line) => {
-//         line.classList.remove('scroll-on');
-//       })
-//     };
-//   })
-// }
-
-
-
-
-// const scrollElement = document.querySelectorAll(".js-scroll");
-// const displayScrollElement = () => {
-//   scrollElement.forEach ((element) => {
-//     console.log('hello');
-//     element.classList.add('scrolled');
-//   })
-// }
-
-// const hideScrollElement = () => {
-//   scrollElement.forEach((element) => {
-//     element.classList.remove('scrolled');
-//   })
-// }
-
-
-
-
-
+// Calling the init function.
 mobileMenu.init();
