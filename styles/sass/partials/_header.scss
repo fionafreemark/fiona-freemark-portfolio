@@ -1,0 +1,136 @@
+@use "./variables" as *;
+
+/* Navigation Skip Link */
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: -0px;
+    z-index: 999;
+    background: $transparent;
+    color: $navy-blue;
+    font-size: $fs-default;
+    padding: 5px;
+    border: 1px solid $navy-blue;
+}
+
+.skip-link:focus {
+    left: 0;
+    color: $navy-blue;
+}
+
+// Header Section
+header {
+    background: linear-gradient(180deg, $light-lilac 0%, $dark-lilac 90%);
+    background-image: url(../assets/fiona-freemark-cloud-background-lavender.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+// Mobile Menu Button
+.menu-button {
+    display: none;
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    top: 30px;
+    right: 25px;
+    z-index: 20;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: $transparent-lilac;
+    box-shadow: 0 0 2px 2px $transparent-lilac;
+    border-radius: 2px;
+    transition: 300ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        opacity: 0.9;
+        background-color: $off-white;
+        box-shadow: 0 0 2px 2px $off-white;
+        scale: 0.9;
+    }
+}
+
+// Hamburger menu default styles:
+.menu-open {
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 6px;
+    left: 3px;
+    background-color: $navy-blue;
+    border-radius: 2px;
+    transition: 300ms;
+}
+
+// Spacing the menu lines:
+.line-2 {
+    top: 14px;
+}
+
+.line-3 {
+    top: 22px;
+}
+
+// Hamburger styled as an "X":
+.menu-close {
+    .line-1 {
+        rotate: 45deg;
+        top: 14px;
+    }
+
+    .line-2 {
+        rotate: -45deg;
+    }
+
+    .line-3 {
+        opacity: 0;
+    }
+}
+
+// Navigation Styles
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+}
+
+.nav-link {
+    padding: 8px 12px;
+    margin: 0 5px;
+    font-size: $fs-small;
+    transition: 300ms;
+    border: 2px solid $transparent;
+    border-radius: 2px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    border: 2px solid $navy-blue;
+}
+
+// Heading Container Styles
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 63px);
+
+    h2 {
+        padding: 2.5% 0 1.5%;
+    }
+
+    a {
+        align-self: flex-start;
+        margin-top: 2%;
+    }
+}

@@ -1,0 +1,64 @@
+@use "./variables" as *;
+
+// Global Styles
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav ul {
+	list-style: none;
+}
+
+textarea {
+	resize: none;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+.wrapper {
+	max-width: 1200px;
+	width: 85%;
+	margin: 0 auto;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+// Global Button/Link Styles -------------------
+.button-outline,
+.link-outline {
+	display: inline-block;
+	padding: 10px 15px;
+	color: $navy-blue;
+	background-color: $transparent;
+	border: 2px solid $navy-blue;
+	border-radius: 2px;
+	transition: 500ms;
+}
+
+.button-outline:hover,
+.button-outline:focus,
+.link-outline:hover,
+.link-outline:focus {
+	color: $light-lilac;
+	background-color: $navy-blue;
+	border: 2px solid $navy-blue;
+}
+
+.button-outline:active,
+.link-outline:active {
+	scale: 0.9;
+}

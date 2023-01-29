@@ -1,1 +1,75 @@
 @use "./variables" as *;
+
+// Global Typography
+html {
+    font-size: $fs-global;
+    color: $navy-blue;
+}
+
+h1,
+h3 {
+    font-family: $ff-headings;
+    font-style: italic;
+    color: $navy-blue;
+    text-transform: lowercase;
+    font-weight: $fw-bold;
+    font-size: $fs-4xl;
+}
+
+h2,
+h4 {
+    font-family: $ff-body;
+    font-size: $fs-lrg;
+    font-weight: $fw-default;
+    color: $navy-blue;
+    text-transform: uppercase;
+}
+
+p,
+a,
+button,
+label,
+textarea,
+li,
+input[type="email"],
+input[type="text"] {
+    font-family: $ff-body;
+    font-weight: $fw-default;
+    font-size: $fs-small;
+    color: $navy-blue;
+}
+
+p,
+label,
+textarea,
+li,
+input[type="email"],
+input[type="text"] {
+    line-height: 3rem;
+}
+
+a,
+button {
+    text-decoration: none;
+    border: 2px solid $transparent;
+}
+
+label,
+button,
+.nav-link {
+    font-weight: $fw-default;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: $fs-default;
+}
+
+i {
+    color: $light-lilac;
+    font-size: $fs-4xl;
+}
+
+ul {
+    list-style-type: none;
+}

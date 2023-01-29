@@ -1,0 +1,19 @@
+@use "./variables" as *;
+
+// FOOTER SECTION ------------------------------------
+
+footer {
+  background-color: $navy-blue;
+}
+
+.footer-container {
+  padding: 2% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+footer p {
+  color: $light-lilac;
+}
