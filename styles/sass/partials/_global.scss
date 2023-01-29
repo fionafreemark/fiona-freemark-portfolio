@@ -42,11 +42,10 @@ html {
 .link-outline {
 	display: inline-block;
 	padding: 10px 15px;
-	color: $navyBlue;
+	color: $navy-blue;
 	background-color: $transparent;
-	border: 2px solid $navyBlue;
+	border: 2px solid $navy-blue;
 	border-radius: 2px;
-	// box-shadow: 8px 8px 0px $navyBlue;
 	transition: 500ms;
 }
 
@@ -54,15 +53,12 @@ html {
 .button-outline:focus,
 .link-outline:hover,
 .link-outline:focus {
-	color: $lightLilac;
-	background-color: $navyBlue;
-	border: 2px solid $navyBlue;
-	// box-shadow: 8px 8px 0px $navyBlue;
+	color: $light-lilac;
+	background-color: $navy-blue;
+	border: 2px solid $navy-blue;
 }
 
 .button-outline:active,
 .link-outline:active {
 	scale: 0.9;
-	// transform: translateX(4px) translateY(4px);
-	// box-shadow: 4px 4px 10px $navyBlue;
 }

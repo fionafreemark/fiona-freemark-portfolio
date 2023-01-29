@@ -1,7 +1,9 @@
 @use "./variables" as *;
 
-// --------------- 1100px ------------------------------
+// --------------- 1100px ------------------------
 @media (max-width: 1100px) {
+
+  // GLOBAL STYLES ----------
   .wrapper {
     width: 85%;
   }
@@ -15,7 +17,7 @@
     font-size: $fs-med;
   }
 
-  // ABOUT ME SECTION
+  // ABOUT ME SECTION ----------
   p,
   label,
   textarea,
@@ -25,7 +27,7 @@
     line-height: 2.5rem;
   }
 
-  // SKILLS SECTION
+  // SKILLS SECTION ----------
   .skills-icon-container {
     justify-content: center;
   }
@@ -38,7 +40,7 @@
     font-size: $fs-3xl;
   }
 
-  // PROJECT SECTION
+  // PROJECT SECTION ----------
   .proj-box-1::after {
     bottom: 0;
   }
@@ -46,13 +48,16 @@
 
 }
 
-// --------------- 1100px ------------------------------
-// --------------- 800px -------------------------------
+// --------------- 1100px --------------------------
+// --------------- 800px ---------------------------
 @media (max-width: 800px) {
+
+  // GLOBAL STYLES ----------
   h1 {
     font-size: $fs-3xl
   }
 
+  // HEADER SECTION ----------
   .menu-button {
     display: block;
     cursor: pointer;
@@ -112,7 +117,7 @@
     margin: 1% 0;
   }
 
-  // SKILLS SECTION
+  // SKILLS SECTION ----------
   .icon-box {
     flex-basis: 20%;
   }
@@ -121,7 +126,7 @@
     font-size: $fs-2xl;
   }
 
-  // PROJECTS SECTION
+  // PROJECTS SECTION ----------
   .proj-box {
     flex-direction: column;
   }
@@ -196,6 +201,8 @@
 // --------------- 800px -------------------------------
 // --------------- 500px -------------------------------
 @media (max-width: 500px) {
+
+  // GLOBAL STYLES ----------
   h1 {
     font-size: $fs-2xl;
   }
@@ -209,7 +216,7 @@
     font-size: $fs-small;
   }
 
-  // ABOUT ME SECTION
+  // ABOUT ME SECTION ----------
   .fiona-portrait {
     min-width: 120px;
   }
@@ -218,7 +225,7 @@
     padding: 2% 0;
   }
 
-  // SKILLS SECTION
+  // SKILLS SECTION ----------
   .icon-box {
     flex-basis: 30%;
   }
@@ -227,7 +234,7 @@
     font-size: $fs-2xl;
   }
 
-  // PROJECT SECTION
+  // PROJECT SECTION ----------
   .proj-skills {
     display: flex;
     justify-content: space-between;
@@ -253,7 +260,7 @@
     margin-right: 0;
   }
 
-  // CONTACT SECTION
+  // CONTACT SECTION ----------
   .contact-section {
     padding-bottom: 20%;
   }
@@ -272,8 +279,8 @@
     padding-right: 5px;
   }
 
-        .form-button {
-          width: 100%;
-        }
+  .form-button {
+    width: 100%;
+  }
 
 }

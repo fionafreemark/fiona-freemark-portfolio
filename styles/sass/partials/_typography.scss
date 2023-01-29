@@ -1,19 +1,18 @@
 @use "./variables" as *;
 
 // Global Typography
-
 html {
     font-size: $fs-global;
-    color: $navyBlue;
+    color: $navy-blue;
 }
 
 h1,
 h3 {
     font-family: $ff-headings;
     font-style: italic;
-    color: $navyBlue;
+    color: $navy-blue;
     text-transform: lowercase;
-    font-weight: 700;
+    font-weight: $fw-bold;
     font-size: $fs-4xl;
 }
 
@@ -22,8 +21,22 @@ h4 {
     font-family: $ff-body;
     font-size: $fs-lrg;
     font-weight: $fw-default;
-    color: $navyBlue;
+    color: $navy-blue;
     text-transform: uppercase;
+}
+
+p,
+a,
+button,
+label,
+textarea,
+li,
+input[type="email"],
+input[type="text"] {
+    font-family: $ff-body;
+    font-weight: $fw-default;
+    font-size: $fs-small;
+    color: $navy-blue;
 }
 
 p,
@@ -32,39 +45,31 @@ textarea,
 li,
 input[type="email"],
 input[type="text"] {
-    font-family: $ff-body;
-    font-size: 1.8rem;
-    font-weight: $fw-default;
-    color: $navyBlue;
     line-height: 3rem;
-}
-
-label,
-button {
-    font-weight: $fw-default;
 }
 
 a,
 button {
-    font-family: $ff-body;
-    font-size: $fs-default;
-    color: $navyBlue;
     text-decoration: none;
     border: 2px solid $transparent;
 }
 
+label,
+button,
+.nav-link {
+    font-weight: $fw-default;
+}
+
 .nav-link {
     text-transform: uppercase;
-    font-weight: $fw-default;
-    font-size: 1.6rem;
+    font-size: $fs-default;
 }
 
 i {
-    color: $lightLilac;
+    color: $light-lilac;
     font-size: $fs-4xl;
 }
 
 ul {
     list-style-type: none;
 }
-
