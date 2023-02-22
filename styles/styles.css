@@ -670,20 +670,29 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   padding: 4% 0;
 }
 
-.proj-box-1::after {
+.proj-box-1,
+.proj-box-2,
+.proj-box-3 {
+  position: relative;
+}
+
+.proj-box-1::after,
+.proj-box-2::after,
+.proj-box-3::after {
   position: absolute;
   content: "";
   width: 100%;
   height: 1px;
-  bottom: -6%;
+  bottom: -7%;
   background-color: #e5d1f7;
 }
 
-.proj-box-2 {
+.proj-box-2,
+.proj-box-3,
+.proj-box-4 {
   padding-top: 5%;
   margin-top: 5%;
 }
@@ -985,15 +994,15 @@ footer p {
     font-size: 8rem;
   }
   h2,
-h4 {
+  h4 {
     font-size: 2.2rem;
   }
   p,
-label,
-textarea,
-li,
-input[type=email],
-input[type=text] {
+  label,
+  textarea,
+  li,
+  input[type=email],
+  input[type=text] {
     line-height: 2.5rem;
   }
   .skills-icon-container {
@@ -1139,8 +1148,8 @@ input[type=text] {
         flex-basis: 100%;
   }
   .client-name,
-.client-email,
-.client-message {
+  .client-email,
+  .client-message {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     padding: 2% 2%;
@@ -1164,7 +1173,7 @@ input[type=text] {
     font-size: 6rem;
   }
   h2,
-h4 {
+  h4 {
     font-size: 1.8rem;
   }
   .fiona-portrait {
