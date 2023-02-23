@@ -38,6 +38,16 @@ html {
 }
 
 // Global Button/Link Styles -------------------
+
+.juno-link {
+	color: $navy-blue;
+	border-bottom: 1px solid $light-lilac;
+	&:hover,
+	&:focus {
+			border-bottom: 1px solid $deep-purple;
+	}
+
+}
 .button-outline,
 .link-outline {
 	display: inline-block;
@@ -62,3 +72,5 @@ html {
 .link-outline:active {
 	scale: 0.9;
 }
+
+
