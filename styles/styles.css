@@ -273,6 +273,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.juno-link {
+  color: #01223D;
+  border-bottom: 1px solid #e5d1f7;
+}
+.juno-link:hover, .juno-link:focus {
+  border-bottom: 1px solid #43136c;
+}
+
 .button-outline,
 .link-outline {
   display: inline-block;
@@ -1085,7 +1093,6 @@ footer p {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     padding: 5% 0;
-    text-align: justify;
     margin-left: 0;
   }
   .about-me-text {
@@ -1188,14 +1195,6 @@ footer p {
   }
   i {
     font-size: 6rem;
-  }
-  .proj-skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .proj-skills li {
     font-size: 1.6rem;
