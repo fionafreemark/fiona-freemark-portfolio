@@ -5,13 +5,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Portfolio website by Fiona Freemark, a front-end web developer.">
+	<meta name="description" content="Fiona Freemark - Front-End Web Developer, based in Toronto, Canada. Coding with React, Firebase, JavaScript, GitHub, SASS, CSS, HTML. View recent projects & connect.">
 	<link rel="icon" type="image/png" href="./assets/favicon.png" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&family=Montserrat:wght@400;500;600&display=swap"
-		rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;800&display=swap"
+			rel="stylesheet">
+
 	<script src="https://kit.fontawesome.com/88337ba8f3.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 	<link rel="stylesheet" href="./styles/styles.css">
@@ -54,7 +54,7 @@
 			<!-- Navigation Menu Ends -->
 			<!-- Heading Container Starts -->
 			<div class="heading-container">
-				<h1>Fiona Freemark</h1>
+				<h1 class="dot-detail">Fiona Freemark</h1>
 				<h2>Front-End Web Developer</h2>
 				<a href="#contact" class="link-outline">Get in Touch</a>
 				<div class="button-shadow"></div>
@@ -74,13 +74,12 @@
 						alt="Portrait of Fiona Freemark, the developer of this website.">
 				</div>
 				<div class="about-me-text-container">
-					<h3 class="about-me-heading">About Me</h3>
+					<h3 class="about-me-heading dot-detail">About Me</h3>
 					<p class="about-me-text">Hi, my name is Fiona!</p>
 					<p class="about-me-text">I'm a front-end developer and
 						artist with 10 years of experience in the design, production and
 						presentation of
-						artworks in digital and physical platforms. I am passionate about building accessible, responsive code using
-						HTML5, CSS3, JavaScript, Firebase and React.
+						artworks in digital and physical platforms. As a recent graduate of Juno College's <a class="juno-link" href="https://junocollege.com/bootcamp/web-development-toronto/" target="_blank">Immersive Web Development Bootcamp</a>, I am passionate about building accessible, responsive code using React, ES6, Firebase, SASS, CSS3 & HTML5.
 					</p>
 					<p class="about-me-text">
 						I bring my love of art into every project,
@@ -95,7 +94,7 @@
 		<!-- SKILLS SECTION ------------------------------->
 		<section class="skills-section" id="skills">
 			<div class="wrapper skills-container">
-				<h3 class="skills-heading">Skills</h3>
+				<h3 class="skills-heading dot-detail">Skills</h3>
 				<div class="skills-icon-container">
 					<div class="icon-box">
 						<i class="fa-brands fa-html5"></i>
@@ -136,10 +135,72 @@
 		<!-- PROJECT SECTION------------------------------->
 		<section class="projects-section" id="projects">
 			<div class="wrapper proj-outer-box">
-				<h3 class="proj-heading">Projects</h3>
+				<h3 class="proj-heading dot-detail">Projects</h3>
 				<div class="proj-container">
 					<!-- Start of Project Box 1 -->
 					<div class="proj-box proj-box-1 ">
+						<div class="proj-img-container img-box-1">
+							<a href="https://whatever-floats-your-vote.netlify.app/" class="img-link" target="_blank">
+								<img class="creative-img" src="./assets/fiona-freemark-whatever-floats-your-vote-project-preview.png"
+									alt="Screenshot of the 'Whatever Floats your Vote' app with an illustration of a ballot box.">
+							</a>
+						</div> <!-- End of .proj-img-container -->
+						<div class="proj-text-container">
+							<h4>Whatever Floats Your Vote</h4>
+							<p class="proj-desc">
+								An anonymous voting application that allows users to create, find, vote on, and view poll results. Built with React and Firebase, the core functionality uses JavaScript, routing, state, props and components to post and pull information from the database. Created using paired programming techniques alongside Caryl Tan, Chris O'Bray & Libby Reeves.
+							</p>
+							<ul class="proj-skills">
+								<li>React</li>
+								<li>Firebase</li>
+								<li>JavaScript</li>
+								<li>GitHub</li>
+								<li>SASS</li>
+								<li>HTML</li>
+							</ul>
+							<div class="proj-link-container">
+								<a class="proj-link link-outline" href="https://whatever-floats-your-vote.netlify.app/" target="_blank">Live
+									Site</a>
+								<a class="proj-link link-outline" href="https://github.com/Code-Conjurers/Voting-Booth"
+									target="_blank">GitHub</a>
+							</div> <!-- End of .proj-link-container -->
+						</div><!-- End of .proj-text-container -->
+					</div> <!-- End of .proj-box -->
+					<!-- End of Project Box 1 -->
+					<!-- Start of Project Box 2 -->
+					<div class="proj-box proj-box-2 ">
+						<div class="proj-img-container img-box-1">
+							<a href="https://the-daily-tarot.netlify.app/" class="img-link" target="_blank">
+								<img class="creative-img" src="./assets/fiona-freemark-the-daily-tarot-preview.png"
+									alt="A screenshot of 'The Daily Tarot' website, depicting app instructions and an image of tarot cards splayed across the background.">
+							</a>
+						</div> <!-- End of .proj-img-container -->
+						<div class="proj-text-container">
+							<h4>The Daily Tarot</h4>
+							<p class="proj-desc">A daily tarot app that allows the user the pull a randomized card from a standard 77-card deck. A local image is then matched to
+							the selected card from the API and displayed on screen with it's meaning and description. The user has the option
+							to save their response in a Firebase database. Saved cards are displayed in the "Saved Responses" section. 
+							</p>
+							<ul class="proj-skills">
+								<li>React</li>
+								<li>Firebase</li>
+								<li>API</li>
+								<li>JavaScript</li>
+								<li>GitHub</li>
+								<li>SASS</li>
+								<li>HTML</li>
+							</ul>
+							<div class="proj-link-container">
+								<a class="proj-link link-outline" href="https://the-daily-tarot.netlify.app/" target="_blank">Live
+									Site</a>
+								<a class="proj-link link-outline" href="https://github.com/fionafreemark/the-daily-tarot"
+									target="_blank">GitHub</a>
+							</div> <!-- End of .proj-link-container -->
+						</div><!-- End of .proj-text-container -->
+					</div> <!-- End of .proj-box -->
+					<!-- End of Project Box 2 -->
+					<!-- Start of Project Box 3 -->
+					<div class="proj-box proj-box-3 ">
 						<div class="proj-img-container img-box-1">
 							<a href="https://creative-brand-design.netlify.app/" class="img-link" target="_blank">
 								<img class="creative-img" src="./assets/fiona-freemark-creative-brand-project.png"
@@ -167,9 +228,9 @@
 							</div> <!-- End of .proj-link-container -->
 						</div><!-- End of .proj-text-container -->
 					</div> <!-- End of .proj-box -->
-					<!-- End of Project Box 1 -->
-					<!-- Start of Project Box 2 -->
-					<div class="proj-box proj-box-2 ">
+					<!-- End of Project Box 3 -->
+					<!-- Start of Project Box 4 -->
+					<div class="proj-box proj-box-4 ">
 						<div class="proj-img-container">
 							<a href="https://animal-match-app.netlify.app/" class="img-link" target="_blank">
 								<img class="animal-match-img"
@@ -199,7 +260,7 @@
 							</div> <!-- End of .proj-link-container -->
 						</div><!-- End of .proj-text-container -->
 					</div> <!-- End of .proj-box -->
-					<!-- End of Project Box 2 -->
+					<!-- End of Project Box 4 -->
 				</div><!-- End of .proj-container -->
 			</div><!-- End of .wrapper .proj-outer-box -->
 		</section>
@@ -209,7 +270,7 @@
 			<div class="wrapper">
 				<div class="contact-outer-box">
 					<div class="contact-left-box ">
-						<h3 class="contact-header">Contact</h3>
+						<h3 class="contact-header dot-detail">Contact</h3>
 						<p class="contact-body">If you'd like to chat about code, art, cats or projects, shoot me a message or
 							connect with me at the links below!
 						<div class="contact-icon-box">
@@ -241,8 +302,8 @@
 							<input type="email" id="client-email" class="client-name" name="client-email" required>
 							<!-- Message Input -->
 							<label for="client-message">Message</label>
-							<textarea type="text" id="client-message" class="client-message" name="client-message" rows="8"
-								required>Leave me a message!</textarea>
+							<textarea type="text" id="client-message" class="client-message" name="client-message" rows="8" placeholder="Leave me a message!"
+								required></textarea>
 							<button name="message-submission" type="submit" class="button-outline form-button">Get in Touch</button>
 						</form>
 						<!-- Contact Form Ends ---------------------------->

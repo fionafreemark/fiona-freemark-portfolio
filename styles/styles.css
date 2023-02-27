@@ -1,5 +1,4 @@
-/* 700 Italic */
-/* in $fw-default/ 600 */
+/* in $fw-default/ 400 */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -273,6 +272,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.juno-link {
+  color: #01223D;
+  border-bottom: 1px solid #e5d1f7;
+}
+.juno-link:hover, .juno-link:focus {
+  border-bottom: 1px solid #43136c;
+}
+
 .button-outline,
 .link-outline {
   display: inline-block;
@@ -306,17 +313,21 @@ html {
 
 h1,
 h3 {
-  font-family: "Cormorant Infant", serif;
-  font-style: italic;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 0.2rem;
   color: #01223D;
   text-transform: lowercase;
-  font-weight: 700;
-  font-size: 10rem;
+  font-weight: 800;
+  font-size: 8rem;
+}
+
+.dot-detail::after {
+  content: ".";
 }
 
 h2,
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   font-weight: 400;
   color: #01223D;
@@ -331,7 +342,7 @@ textarea,
 li,
 input[type=email],
 input[type=text] {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
   color: #01223D;
@@ -670,20 +681,29 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   padding: 4% 0;
 }
 
-.proj-box-1::after {
+.proj-box-1,
+.proj-box-2,
+.proj-box-3 {
+  position: relative;
+}
+
+.proj-box-1::after,
+.proj-box-2::after,
+.proj-box-3::after {
   position: absolute;
   content: "";
   width: 100%;
   height: 1px;
-  bottom: -6%;
+  bottom: -7%;
   background-color: #e5d1f7;
 }
 
-.proj-box-2 {
+.proj-box-2,
+.proj-box-3,
+.proj-box-4 {
   padding-top: 5%;
   margin-top: 5%;
 }
@@ -985,15 +1005,15 @@ footer p {
     font-size: 8rem;
   }
   h2,
-h4 {
+  h4 {
     font-size: 2.2rem;
   }
   p,
-label,
-textarea,
-li,
-input[type=email],
-input[type=text] {
+  label,
+  textarea,
+  li,
+  input[type=email],
+  input[type=text] {
     line-height: 2.5rem;
   }
   .skills-icon-container {
@@ -1076,7 +1096,6 @@ input[type=text] {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     padding: 5% 0;
-    text-align: justify;
     margin-left: 0;
   }
   .about-me-text {
@@ -1139,8 +1158,8 @@ input[type=text] {
         flex-basis: 100%;
   }
   .client-name,
-.client-email,
-.client-message {
+  .client-email,
+  .client-message {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     padding: 2% 2%;
@@ -1164,7 +1183,7 @@ input[type=text] {
     font-size: 6rem;
   }
   h2,
-h4 {
+  h4 {
     font-size: 1.8rem;
   }
   .fiona-portrait {
@@ -1179,14 +1198,6 @@ h4 {
   }
   i {
     font-size: 6rem;
-  }
-  .proj-skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .proj-skills li {
     font-size: 1.6rem;
