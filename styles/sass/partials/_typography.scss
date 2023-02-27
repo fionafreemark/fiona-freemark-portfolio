@@ -9,11 +9,16 @@ html {
 h1,
 h3 {
     font-family: $ff-headings;
-    font-style: italic;
+    letter-spacing: .2rem;
+    // font-style: italic;
     color: $navy-blue;
     text-transform: lowercase;
-    font-weight: $fw-bold;
-    font-size: $fs-4xl;
+    font-weight: 800;
+    font-size: $fs-3xl;
+}
+
+.dot-detail::after {
+    content: ".";
 }
 
 h2,
