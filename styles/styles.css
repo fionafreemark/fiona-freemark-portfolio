@@ -1,5 +1,4 @@
-/* 700 Italic */
-/* in $fw-default/ 600 */
+/* in $fw-default/ 400 */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -314,17 +313,21 @@ html {
 
 h1,
 h3 {
-  font-family: "Cormorant Infant", serif;
-  font-style: italic;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 0.2rem;
   color: #01223D;
   text-transform: lowercase;
-  font-weight: 700;
-  font-size: 10rem;
+  font-weight: 800;
+  font-size: 8rem;
+}
+
+.dot-detail::after {
+  content: ".";
 }
 
 h2,
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   font-weight: 400;
   color: #01223D;
@@ -339,7 +342,7 @@ textarea,
 li,
 input[type=email],
 input[type=text] {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
   color: #01223D;
