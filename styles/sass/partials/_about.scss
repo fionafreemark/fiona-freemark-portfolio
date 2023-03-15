@@ -3,12 +3,20 @@
 // ABOUT ME SECTION -----------------------------------
 
 .about-me-section {
-  background-color: $off-white;
+  background-color: $grey;
   padding: 10% 0;
 }
 
 .about-me-container {
+  position: relative;
   display: flex;
+  .shape-smooth {
+    background-color: $yellow;
+    z-index: 1;
+    right: -3rem;
+    top: -7rem;
+  }
+
 }
 
 .about-me-img-container {
@@ -23,13 +31,13 @@
   width: 90%;
   min-width: 280px;
   padding: 2%;
-  border: 3px solid $light-lilac;
   border-radius: 50% 50% 0 0;
-  box-shadow: 5px 5px 0px $light-lilac;
+  border: 3px solid $pink;
+  box-shadow: 5px 5px 0px $pink;
 }
 
 .about-me-heading {
-  color: $deep-purple;
+  color: $black;
 }
 
 .about-me-text-container {
@@ -49,4 +57,20 @@
 
 .about-titles {
   margin-bottom: 3%;
+}
+
+.bold-link {
+  font-family: $ff-body;
+  font-weight: $fw-semi-bold;
+}
+
+.juno-link {
+    font-family: $ff-body;
+    font-weight: $fw-default;
+  border-bottom: 1px solid $black;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $red;
+    font-weight: $fw-semi-bold;
+  }
 }

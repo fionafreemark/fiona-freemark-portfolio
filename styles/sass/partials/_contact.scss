@@ -3,23 +3,39 @@
 // CONTACT SECTION -----------------------------------
 
 .contact-section {
-  background-color: $light-lilac;
+  background-color: $pink;
   position: relative;
   padding: 10% 0;
 }
 
 .contact-outer-box {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  .shape-pie {
+      background-color: $yellow;
+      z-index: 10;
+      left: -15rem;
+      bottom: -15rem;
+      rotate: 180deg;
+    }
+  
+    .shape-smooth {
+      background-color: $red;
+      z-index: 10;
+      left: 8rem;
+      bottom: 8rem;
+      rotate: 90deg;
+    }
 }
 
 .contact-left-box {
-  flex-basis: 30%;
+  flex-basis: 40%;
 }
 
 .contact-right-box {
-  flex-basis: 70%;
+  flex-basis: 60%;
 
   a {
     margin-left: 10%;
@@ -44,16 +60,15 @@
 .contact-icon-box i {
   margin: 5px;
   padding: 5px;
-  color: $deep-purple;
+  color: $black;
   font-size: $fs-lrg;
   transition: 300ms;
-  scale: 1;
+  border: 2px solid $transparent;
 }
 
 .contact-icon-box i:hover,
 .contact-icon-box i:focus {
-  color: $off-white;
-  scale: 0.9;
+  border: 2px solid $black;
 }
 
 .contact-icon-box .fa-linkedin {
@@ -80,9 +95,8 @@
 .client-email,
 .client-message {
   padding: 2%;
-  background-color: $off-white;
-  border: $off-white;
-  border-radius: 2px;
+  background-color: $white;
+  border: $white;
 }
 
 .form-button {
@@ -117,22 +131,22 @@
 
   0%,
   100% {
-    color: $light-lilac;
+    color: $white;
   }
 
   50% {
-    color: $navy-blue;
+    color: $black;
   }
 }
 @keyframes fade-hover {
 
   0%,
   100% {
-    color: $light-lilac;
+    color: $white;
   }
 
   50% {
-    color: $deep-purple;
+    color: $black;
   }
 }
 

@@ -8,8 +8,13 @@
     width: 85%;
   }
 
-  h3 {
+
+  h1 {
     font-size: $fs-3xl;
+  }
+
+  h3 {
+    font-size: $fs-2xl;
   }
 
   h2,
@@ -57,6 +62,29 @@
     font-size: $fs-3xl
   }
 
+  // Decorative Shapes
+  .shape-smooth,
+  .shape-arch,
+  .shape-line,
+  .shape-triangle,
+  .shape-square,
+  .shape-circle {
+    position: absolute;
+    z-index: -10;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .shape-pie {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  // .shape-arrow,
+  // .shape-arrow-1 {
+  //   width: 4em;
+  // }
+
   // HEADER SECTION ----------
   .menu-button {
     display: block;
@@ -75,7 +103,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, rgba(229, 209, 247, 1) 0%, rgba(181, 174, 241, 1) 90%);
+    background: linear-gradient(180deg, $white 0%, $pink 90%);
     z-index: 30;
     transition: 500ms;
   }
@@ -93,6 +121,13 @@
     a {
       font-size: $fs-lrg;
       line-height: 6rem;
+    }
+  }
+
+  .heading-cont {
+    .shape-pie {
+      right: -10rem;
+      top: 2rem;
     }
   }
 
@@ -119,28 +154,41 @@
 
   // SKILLS SECTION ----------
   .icon-box {
-    flex-basis: 20%;
+    flex-basis: 19%;
+    margin: 0 1%;
   }
 
   i {
     font-size: $fs-2xl;
   }
 
+  .skills-container {
+    .shape-pie {
+      right: -6rem;
+      top: -12rem;
+    }
+    .shape-circle {
+      right: 0rem;
+      top: -4rem
+    }
+  }
+
+
   // PROJECTS SECTION ----------
+
   .proj-box {
-    flex-direction: column;
+    width: 100%;
   }
 
-  .proj-box-2 {
-    padding-top: 10%;
-  }
+  .proj-outer-box {
+    .shape-circle {
+      right: -2rem;
+    }
 
-  .proj-text-container {
-    text-align: justify;
-  }
-
-  .proj-box-1::after {
-    bottom: -4%;
+    .shape-smooth {
+      right: 4rem;
+      top: -3rem;
+    }
   }
 
   // CONTACT SECTION -----------------
@@ -196,6 +244,20 @@
     bottom: 2%;
   }
 
+    .contact-outer-box {
+      .shape-pie {
+        left: 85%;
+        bottom: -24%;
+        rotate: 90deg;
+      }
+  
+      .shape-smooth {
+        left: 74%;
+        bottom: -5%;
+        rotate: 180deg;
+      }
+    }
+
 }
 
 // --------------- 800px -------------------------------
@@ -208,12 +270,45 @@
   }
 
   h3 {
-    font-size: $fs-2xl;
+    font-size: $fs-xl;
   }
 
   h2,
   h4 {
     font-size: $fs-small;
+  }
+
+  p,
+  .juno-link {
+    font-size: $fs-default;
+  }
+  // Decorative Shapes
+  .shape-smooth,
+  .shape-arch,
+  .shape-line,
+  .shape-triangle,
+  .shape-square,
+  .shape-circle,
+  .shape-pie {
+display: none;
+  }
+
+  // HEADING SECTION -----------
+  .heading-cont {
+    h1 {
+      font-size: $fs-xl;
+    }
+    h2 {
+      font-size: $fs-default;
+      padding: 8% 0;
+    }
+    a.link-outline {
+      font-size: $fs-default;
+    }
+    .shape-smooth,
+    .shape-pie {
+      display: block;
+    }
   }
 
   // ABOUT ME SECTION ----------
@@ -255,6 +350,17 @@
 
   .proj-link:first-of-type {
     margin-right: 0;
+  }
+
+  .proj-outer-box {
+    .shape-circle {
+      right: -2rem;
+    }
+
+    .shape-smooth {
+      right: 4rem;
+      top: -3rem;
+    }
   }
 
   // CONTACT SECTION ----------

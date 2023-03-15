@@ -7,24 +7,24 @@
     top: -0px;
     z-index: 999;
     background: $transparent;
-    color: $navy-blue;
+    color: $black;
     font-size: $fs-default;
     padding: 5px;
-    border: 1px solid $navy-blue;
+    border: 1px solid $black;
 }
 
 .skip-link:focus {
     left: 0;
-    color: $navy-blue;
+    color: $black;
 }
 
 // Header Section
 header {
-    background: linear-gradient(180deg, $light-lilac 0%, $dark-lilac 90%);
-    background-image: url(../assets/fiona-freemark-cloud-background-lavender.jpg);
+    background: $white;
     background-size: cover;
     background-position: center;
     height: 100vh;
+    min-height: 715px;
     position: relative;
 }
 
@@ -40,16 +40,13 @@ header {
     padding: 0;
     margin: 0;
     border: none;
-    background-color: $transparent-lilac;
-    box-shadow: 0 0 2px 2px $transparent-lilac;
-    border-radius: 2px;
+    background-color: $white;
     transition: 300ms ease-in-out;
 
     &:hover,
     &:focus {
         opacity: 0.9;
-        background-color: $off-white;
-        box-shadow: 0 0 2px 2px $off-white;
+        background-color: $pink;
         scale: 0.9;
     }
 }
@@ -62,8 +59,7 @@ header {
     height: 3px;
     top: 6px;
     left: 3px;
-    background-color: $navy-blue;
-    border-radius: 2px;
+    background-color: $black;
     transition: 300ms;
 }
 
@@ -98,7 +94,8 @@ header {
     justify-content: flex-end;
 }
 
-.nav-menu {
+.nav-menu,
+.ff-logo-box {
     display: flex;
     justify-content: flex-end;
     margin-top: 2%;
@@ -110,27 +107,54 @@ header {
     font-size: $fs-small;
     transition: 300ms;
     border: 2px solid $transparent;
-    border-radius: 2px;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    border: 2px solid $navy-blue;
+    border: 2px solid $black;
 }
 
-// Heading Container Styles
-.heading-container {
+// Heading Content Styles
+
+.heading-cont {
+    position: relative;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - 63px);
+    align-items: center;
+    height: 100vh;
 
-    h2 {
-        padding: 2.5% 0 1.5%;
+    h1 {
+        text-align: center;
     }
 
-    a {
-        align-self: flex-start;
-        margin-top: 2%;
+    h2 {
+        padding: 5% 0;
+        text-align: center;
+    }
+
+
+    .shape-smooth {
+        left: 0;
+        bottom: 15%;
+        border-radius: 0 40% 0 40%;
+        background-color: $blush;
+    }
+
+    .shape-pie {
+        right: -15rem;
+        top: -3rem;
+        clip-path: circle(50% at 0% 100%);
+        background-color: $red;
+    }
+
+    .shape-arrow {
+        top: 20rem;
+        left: 5rem;
+    }
+    .shape-arrow-1 {
+        bottom: 20rem;
+        right: 5rem;
     }
 }

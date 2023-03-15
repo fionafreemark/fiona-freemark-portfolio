@@ -5,17 +5,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Fiona Freemark - Front-End Web Developer, based in Toronto, Canada. Coding with React, Firebase, JavaScript, GitHub, SASS, CSS, HTML. View recent projects & connect.">
+	<meta name="description"
+		content="Fiona Freemark - Front-End Web Developer, based in Toronto, Canada. Coding with React, Firebase, JavaScript, GitHub, SASS, CSS, HTML. View recent projects & connect.">
 	<link rel="icon" type="image/png" href="./assets/favicon.png" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;800&display=swap"
-			rel="stylesheet">
+			rel="stylesheet"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400&family=Open+Sans:ital,wght@0,700;1,700&display=swap"
+		rel="stylesheet">
 
 	<script src="https://kit.fontawesome.com/88337ba8f3.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 	<link rel="stylesheet" href="./styles/styles.css">
-	<title>Fiona Freemark: Front-End Developer</title>
+	<title>Fiona Freemark: Front-End Developer & Artist</title>
 </head>
 
 <body>
@@ -35,9 +41,6 @@
 				<!-- Menu Icon Ends -->
 				<ul class="nav-menu">
 					<li>
-						<a href="#home" class="nav-link">Home</a>
-					</li>
-					<li>
 						<a href="#about" class="nav-link">About</a>
 					</li>
 					<li>
@@ -53,11 +56,19 @@
 			</nav>
 			<!-- Navigation Menu Ends -->
 			<!-- Heading Container Starts -->
-			<div class="heading-container">
-				<h1 class="dot-detail">Fiona Freemark</h1>
-				<h2>Front-End Web Developer</h2>
+			<div class="heading-cont">
+				<h1>Fiona Freemark</h1>
+				<h2>Front-End Web Developer & Artist</h2>
 				<a href="#contact" class="link-outline">Get in Touch</a>
-				<div class="button-shadow"></div>
+				<!-- <div class="shape-arrow">
+					<img src="./assets/arrow.png" alt="">
+				</div>
+				<div class="shape-arrow-1">
+					<img src="./assets/arrow-1.png" alt="">
+				</div> -->
+				<div class="shape-smooth"></div>
+				<div class="shape-pie"></div>
+				<!-- <div class="shape-arrow-2"></div> -->
 			</div> <!-- .heading-container -->
 			<!-- Heading Container Ends -->
 		</div> <!-- .wrapper -->
@@ -74,16 +85,22 @@
 						alt="Portrait of Fiona Freemark, the developer of this website.">
 				</div>
 				<div class="about-me-text-container">
-					<h3 class="about-me-heading dot-detail">About Me</h3>
-					<p class="about-me-text">Hi, my name is Fiona!</p>
+					<h3 class="about-me-heading">About Me</h3>
+					<p class="about-me-text"><span class="bold-link">Hi, my name is Fiona!</span></p>
 					<p class="about-me-text">I'm a front-end developer and
-						artist with 10 years of experience in the design, production and
-						presentation of
-						artworks in digital and physical platforms. As a recent graduate of Juno College's <a class="juno-link" href="https://junocollege.com/bootcamp/web-development-toronto/" target="_blank">Immersive Web Development Bootcamp</a>, I am passionate about building accessible, responsive code using React, ES6, Firebase, SASS, CSS3 & HTML5.
+						artist with 10 years of experience in the <span class="bold-link">design, production and
+							presentation of
+							artworks in digital and physical platforms. </span> As a recent graduate of Juno College's <a
+							class="juno-link" href="https://junocollege.com/bootcamp/web-development-toronto/"
+							target="_blank">Immersive Web Development
+							Bootcamp</a>, I am passionate about building <span class="bold-link">accessible, responsive code using
+							React, ES6, Firebase, SASS,
+							CSS3 & HTML5.</span>
 					</p>
 					<p class="about-me-text">
 						I bring my love of art into every project,
-						leveraging my eye for design, attention to detail, and problem solving abilities to build pixel-perfect
+						leveraging my <span class="bold-link">eye for design, attention to detail, and problem solving abilities
+						</span> to build pixel-perfect
 						websites.
 					</p>
 				</div>
@@ -94,39 +111,64 @@
 		<!-- SKILLS SECTION ------------------------------->
 		<section class="skills-section" id="skills">
 			<div class="wrapper skills-container">
-				<h3 class="skills-heading dot-detail">Skills</h3>
+				<h3 class="skills-heading">Skills</h3>
+				<div class="shape-pie"></div>
+				<div class="shape-circle"></div>
 				<div class="skills-icon-container">
 					<div class="icon-box">
-						<i class="fa-brands fa-html5"></i>
-						<p>HTML</p>
-					</div>
-					<div class="icon-box">
-						<i class="fa-brands fa-css3-alt"></i>
-						<p>CSS</p>
-					</div>
-					<div class="icon-box">
-						<i class="fa-brands fa-sass"></i>
-						<p>SASS</p>
-					</div>
-					<div class="icon-box">
-						<i class="fa-brands fa-js"></i>
-						<p>JavaScript</p>
-					</div>
-					<div class="icon-box">
+
 						<i class="fa-brands fa-react"></i>
 						<p>React</p>
+
 					</div>
+
 					<div class="icon-box">
-						<i class="fa-brands fa-github"></i>
-						<p>GitHub/Git</p>
+
+						<i class="fa-brands fa-js"></i>
+						<p>JavaScript</p>
+
 					</div>
+
 					<div class="icon-box">
+
+						<i class="fa-brands fa-css3-alt"></i>
+						<p>CSS</p>
+
+					</div>
+
+					<div class="icon-box">
+
+						<i class="fa-brands fa-html5"></i>
+						<p>HTML</p>
+
+					</div>
+
+					<div class="icon-box">
+
+						<i class="fa-brands fa-sass"></i>
+						<p>SASS</p>
+
+					</div>
+
+					<div class="icon-box">
+
 						<i class="devicon-firebase-plain"></i>
 						<p>Firebase</p>
+
 					</div>
+
 					<div class="icon-box">
+
+						<i class="fa-brands fa-github"></i>
+						<p>GitHub/Git</p>
+
+					</div>
+
+					<div class="icon-box">
+
 						<i class="fa-solid fa-universal-access"></i>
 						<p>Accessibility</p>
+
 					</div>
 				</div><!-- End of .skills-icon-container -->
 			</div><!-- End of .wrapper .skills-container -->
@@ -135,7 +177,9 @@
 		<!-- PROJECT SECTION------------------------------->
 		<section class="projects-section" id="projects">
 			<div class="wrapper proj-outer-box">
-				<h3 class="proj-heading dot-detail">Projects</h3>
+				<div class="shape-circle"></div>
+				<div class="shape-smooth"></div>
+				<h3 class="proj-heading">Projects</h3>
 				<div class="proj-container">
 					<!-- Start of Project Box 1 -->
 					<div class="proj-box proj-box-1 ">
@@ -148,18 +192,23 @@
 						<div class="proj-text-container">
 							<h4>Whatever Floats Your Vote</h4>
 							<p class="proj-desc">
-								An anonymous voting application that allows users to create, find, vote on, and view poll results. Built with React and Firebase, the core functionality uses JavaScript, routing, state, props and components to post and pull information from the database. Created using paired programming techniques alongside Caryl Tan, Chris O'Bray & Libby Reeves. Design & mobile menu updates added March 2023.
+								An anonymous voting application that allows users to create, find, vote on, and view poll results. Built
+								with React and Firebase, the core functionality uses JavaScript, routing and state to
+								post and pull information from the database. Developed collaboratively with paired programming techniques.
+							</p>
+							<p>
+								Personal Updates: New theme & mobile menu.
 							</p>
 							<ul class="proj-skills">
 								<li>React</li>
 								<li>Firebase</li>
 								<li>JavaScript</li>
-								<li>GitHub</li>
 								<li>SASS</li>
 								<li>HTML</li>
 							</ul>
 							<div class="proj-link-container">
-								<a class="proj-link link-outline" href="https://whateverfloatsyourvote.netlify.app/" target="_blank">Live
+								<a class="proj-link link-outline" href="https://whateverfloatsyourvote.netlify.app/"
+									target="_blank">Live
 									Site</a>
 								<a class="proj-link link-outline" href="https://github.com/fionafreemark/whatever-floats-your-vote"
 									target="_blank">GitHub</a>
@@ -177,16 +226,17 @@
 						</div> <!-- End of .proj-img-container -->
 						<div class="proj-text-container">
 							<h4>The Daily Tarot</h4>
-							<p class="proj-desc">A daily tarot app that allows the user the pull a randomized card from a standard 77-card deck. A local image is then matched to
-							the selected card from the API and displayed on screen with it's meaning and description. The user has the option
-							to save their response in a Firebase database. Saved cards are displayed in the "Saved Responses" section. 
+							<p class="proj-desc">A daily tarot app that allows the user the pull a randomized card from a standard
+								77-card deck. A local image is then matched to
+								the selected card from the API and displayed on screen with it's meaning and description. The user has
+								the option
+								to save their response in a Firebase database.
 							</p>
 							<ul class="proj-skills">
 								<li>React</li>
 								<li>Firebase</li>
 								<li>API</li>
 								<li>JavaScript</li>
-								<li>GitHub</li>
 								<li>SASS</li>
 								<li>HTML</li>
 							</ul>
@@ -208,16 +258,16 @@
 							</a>
 						</div> <!-- End of .proj-img-container -->
 						<div class="proj-text-container">
-							<h4>Creative Brand Website</h4>
+							<h4>Creative Brand PSD Conversion</h4>
 							<p class="proj-desc">A multi-page, psd conversion project with a focus on responsive design
 								and accessibility standards. Added JavaScript features include: a mobile menu and functioning comment
 								section on the blog page.
 							</p>
 							<ul class="proj-skills">
+								<li>JavaScript</li>
 								<li>HTML</li>
 								<li>CSS</li>
 								<li>SASS</li>
-								<li>JavaScript</li>
 								<li>GitHub</li>
 							</ul>
 							<div class="proj-link-container">
@@ -242,8 +292,7 @@
 							<h4>Who Is Your Animal Match?</h4>
 							<p class="proj-desc">A lighthearted app that matches the user's personality to an animal photo. Using
 								the user's inputs, it fetches data from the Pexels' API and displays
-								the resulting match. Developed and designed collaboratively using paired programming techniques with
-								Renata Reinartz.
+								the resulting match. Developed and designed collaboratively using paired programming techniques.
 							</p>
 							<ul class="proj-skills">
 								<li>HTML</li>
@@ -269,8 +318,10 @@
 		<section class="contact-section" id="contact">
 			<div class="wrapper">
 				<div class="contact-outer-box">
+					<div class="shape-pie"></div>
+					<div class="shape-smooth"></div>
 					<div class="contact-left-box ">
-						<h3 class="contact-header dot-detail">Contact</h3>
+						<h3 class="contact-header">Contact</h3>
 						<p class="contact-body">If you'd like to chat about code, art, cats or projects, shoot me a message or
 							connect with me at the links below!
 						<div class="contact-icon-box">
@@ -296,14 +347,14 @@
 						<form class="contact-form" method="post" data-netlify="true" name="contact-form">
 							<!-- Name Input -->
 							<label for="client-name">Name</label>
-							<input type="text" id="client-name" class="client-name" name="client-name" required>
+							<input type="text" id="client-name" class="client-name" name="client-name"  required>
 							<!-- Email Input -->
 							<label for="client-email">Email Address</label>
-							<input type="email" id="client-email" class="client-name" name="client-email" required>
+							<input type="email" id="client-email" class="client-name" name="client-email" required >
 							<!-- Message Input -->
 							<label for="client-message">Message</label>
-							<textarea type="text" id="client-message" class="client-message" name="client-message" rows="8" placeholder="Leave me a message!"
-								required></textarea>
+							<textarea type="text" id="client-message" class="client-message" name="client-message" rows="8"
+								placeholder="Leave me a message!" required></textarea>
 							<button name="message-submission" type="submit" class="button-outline form-button">Get in Touch</button>
 						</form>
 						<!-- Contact Form Ends ---------------------------->

@@ -1,11 +1,13 @@
 // Colours
-$light-lilac: #e5d1f7;
-$transparent-lilac: #e5d1f7da;
-$dark-lilac: #B6B0EF;
-$navy-blue: #01223D;
-$deep-purple: #43136c;
+
 $transparent: #00000000;
-$off-white: #fffcfa;
+$black: #2D2D2D;
+$white: #FFFFFF;
+$red: #CF4027;
+$blush: #E0807E;
+$pink: #F1CED4;
+$yellow: #F1A931;
+$grey: #F3F3F3;
 // Fonts Sizes
 $fs-global: 62.5%;
 $fs-4xl: 10rem; 
@@ -18,10 +20,10 @@ $fs-small: 1.8rem;
 $fs-default: 1.6rem;
 
 // Font Weights
-$fw-default: 400;
-$fw-semi-bold: 600;
+$fw-default: 300;
+$fw-semi-bold: 400;
 $fw-bold: 700;
 
 // Font Family
-$ff-headings: 'Lobster', cursive;
-$ff-body: 'Poppins',sans-serif; /* in $fw-default/ 400 */
+$ff-headings: 'Open Sans', sans-serif; /* 700 & 700 Italic */
+$ff-body: 'Bitter',serif; /* in $fw-default 200, 300/400 */
