@@ -47,15 +47,15 @@
   flex-wrap: wrap;
   width: 46%;
     margin: 5% 0;
+  border: 3px solid $pink;
 }
 
 .proj-text-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 520px;
+  // min-height: 520px;
   padding: 5%;
-  background-color: $grey;
 }
 
 .proj-desc,
@@ -88,7 +88,8 @@
   justify-content: center;
   align-items: center;
   flex-basis: 32%;
-  margin: -6px -2px;
+  margin: -2px -2px;
+
 }
 
 .creative-img,
@@ -97,13 +98,12 @@
   object-position: center;
   width: 100%;
   position: relative;
-  transition: 300ms;
-  border: 2px solid $grey;
+  transition: 300ms;  
 }
 
 .creative-img:hover,
 .animal-match-img:hover,
 .creative-img:focus,
 .animal-match-img:focus {
-  opacity: 50%;
+  background-color: $pink;
 }

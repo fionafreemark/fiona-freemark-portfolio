@@ -20,7 +20,7 @@
 
 // Header Section
 header {
-    background: $white;
+    background-color: $grey;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -139,14 +139,24 @@ header {
         left: 0;
         bottom: 15%;
         border-radius: 0 40% 0 40%;
-        background-color: $blush;
+        background-color: $red;
+    }
+    .shape-smooth:nth-of-type(2) {
+        background-color: $pink;
+        left: 2%;
+        bottom: 17%;
     }
 
     .shape-pie {
-        right: -15rem;
-        top: -3rem;
-        clip-path: circle(50% at 0% 100%);
-        background-color: $red;
+        right: -17%;
+        top: -5%;
+        background-color: $yellow;
+    }
+
+    .shape-pie.pie-2 {
+        right: -15%;
+        top: -3%;
+        background-color: $pink;
     }
 
     .shape-arrow {

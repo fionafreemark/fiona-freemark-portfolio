@@ -126,10 +126,16 @@
 
   .heading-cont {
     .shape-pie {
-      right: -10rem;
-      top: 2rem;
-    }
+        right: -17%;
+        top: 1%;
+    
+        &.pie-2 {
+          right: -15%;
+          top: 3%;
+        }
+      }
   }
+
 
   // ABOUT ME SECTION -----------
   .about-me-container {
@@ -176,9 +182,17 @@
 
   // PROJECTS SECTION ----------
 
+  .proj-container {
+    flex-direction: column;
+  }
+
   .proj-box {
     width: 100%;
+    a.proj-link:nth-of-type(2) {
+      margin-bottom: 0;
+    }
   }
+
 
   .proj-outer-box {
     .shape-circle {
@@ -309,6 +323,16 @@ display: none;
     .shape-pie {
       display: block;
     }
+
+    .shape-pie {
+      right: -30%;
+      top: 0;
+      &.pie-2 {
+        right: -27%;
+        top:1%;
+      }
+    }
+    
   }
 
   // ABOUT ME SECTION ----------

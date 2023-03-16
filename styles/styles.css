@@ -450,7 +450,7 @@ ul {
 }
 
 header {
-  background: #FFFFFF;
+  background-color: #F3F3F3;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -573,14 +573,22 @@ header {
   left: 0;
   bottom: 15%;
   border-radius: 0 40% 0 40%;
-  background-color: #E0807E;
+  background-color: #CF4027;
+}
+.heading-cont .shape-smooth:nth-of-type(2) {
+  background-color: #F1CED4;
+  left: 2%;
+  bottom: 17%;
 }
 .heading-cont .shape-pie {
-  right: -15rem;
-  top: -3rem;
-  -webkit-clip-path: circle(50% at 0% 100%);
-          clip-path: circle(50% at 0% 100%);
-  background-color: #CF4027;
+  right: -17%;
+  top: -5%;
+  background-color: #F1A931;
+}
+.heading-cont .shape-pie.pie-2 {
+  right: -15%;
+  top: -3%;
+  background-color: #F1CED4;
 }
 .heading-cont .shape-arrow {
   top: 20rem;
@@ -592,7 +600,7 @@ header {
 }
 
 .about-me-section {
-  background-color: #F3F3F3;
+  background-color: #FFFFFF;
   padding: 10% 0;
 }
 
@@ -839,6 +847,7 @@ header {
       flex-wrap: wrap;
   width: 46%;
   margin: 5% 0;
+  border: 3px solid #F1CED4;
 }
 
 .proj-text-container {
@@ -852,9 +861,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 520px;
   padding: 5%;
-  background-color: #F3F3F3;
 }
 
 .proj-desc,
@@ -894,7 +901,7 @@ header {
           align-items: center;
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
-  margin: -6px -2px;
+  margin: -2px -2px;
 }
 
 .creative-img,
@@ -907,14 +914,13 @@ header {
   position: relative;
   -webkit-transition: 300ms;
   transition: 300ms;
-  border: 2px solid #F3F3F3;
 }
 
 .creative-img:hover,
 .animal-match-img:hover,
 .creative-img:focus,
 .animal-match-img:focus {
-  opacity: 50%;
+  background-color: #F1CED4;
 }
 
 .contact-section {
@@ -1237,8 +1243,12 @@ footer p {
     line-height: 6rem;
   }
   .heading-cont .shape-pie {
-    right: -10rem;
-    top: 2rem;
+    right: -17%;
+    top: 1%;
+  }
+  .heading-cont .shape-pie.pie-2 {
+    right: -15%;
+    top: 3%;
   }
   .about-me-container {
     -webkit-box-orient: vertical;
@@ -1276,8 +1286,17 @@ footer p {
     right: 0rem;
     top: -4rem;
   }
+  .proj-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .proj-box {
     width: 100%;
+  }
+  .proj-box a.proj-link:nth-of-type(2) {
+    margin-bottom: 0;
   }
   .proj-outer-box .shape-circle {
     right: -2rem;
@@ -1385,6 +1404,14 @@ footer p {
   .heading-cont .shape-smooth,
   .heading-cont .shape-pie {
     display: block;
+  }
+  .heading-cont .shape-pie {
+    right: -30%;
+    top: 0;
+  }
+  .heading-cont .shape-pie.pie-2 {
+    right: -27%;
+    top: 1%;
   }
   .fiona-portrait {
     min-width: 120px;
